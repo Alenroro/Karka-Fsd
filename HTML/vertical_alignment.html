@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #box{
+                height: 500px;
+                width: 80%;
+                text-align: center;
+            }
+            #left{
+                height: 100%;
+                width: 50%;
+                border-right: 2px solid black;
+                float: left;
+            }
+            #right{
+                height: 100%;
+                width: 50%;
+                border-left: 2px solid black;
+                float: right;
+            }
+            .div{
+                height: 50px;
+                width: 80%;
+                margin: 10px;
+                border: 2px solid blue;
+            }
+            #one{
+                color: blueviolet ;
+                vertical-align: baseline;
+                font-size: small;
+            }
+            #two{
+                color: red ;
+                background-color: aqua;
+                vertical-align: bottom;
+                font-size: small;
+            }
+            #three{
+                color: palevioletred ;
+                vertical-align: text-top;
+                font-size: small;
+            }
+            #four{
+                color:blue ;
+                font-size: small;
+                vertical-align: baseline;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            
+            <h1>Vertical alignments</h1>
+            <div id="left">
+                <div class="div">
+                    <p>
+                        There is <span id="one">one</span> pen in the table
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        There are <span id="two">two</span> trees in the garden.
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        <span id="three">Three</span> is an odd number
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        There are <span id="four">Four</span> people in the bus
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        snO<span style="vertical-align: sub;">2</span>+2H<span style="vertical-align: sub;">2</span>-> 2H<span style="vertical-align: sub;">2</span>O+Sn
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        a<span style="vertical-align: super;">4</span>-b<span style="vertical-align: super;">4</span>=(a-b)(a+b)(a<span style="vertical-align: super;">2</span>+b<span style="vertical-align: super;">2</span>)
+                    </p>
+                </div>
+            </div>
+            <div id="right">
+                <div class="div">
+                    <p>
+                        The <img src="./flower2.jpg" style="height: 10px; width: 10px; vertical-align: text-top;"> flower
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        The <img src="./flower2.jpg" style="height: 10px; width: 10px; vertical-align: text-bottom;"> flower.
+                    </p>
+                </div>
+                <div class="div">
+                    <p>
+                        The flower <img src="./flower2.jpg" style="height: 10px; width: 10px;">.
+                    </p>
+                </div>
+            </div>
+            </b>
+        </div>
+    </body>
+</html>

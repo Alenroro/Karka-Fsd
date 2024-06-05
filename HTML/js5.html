@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style></style>
+</head>
+
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+
+    <script>
+        var a = 39;
+        var b = 23;
+        var c = 45;
+        var d = 987;
+        var e = 158;
+        var f = 148;
+        var g = 170;
+        var h = 155;
+        var result = ((a > b && a > c && a > d) ? a : (b > c && b > d) ? b : (c > d) ? c : d);
+        var result1 = (a>b?a:b);
+        var result2 = ((e > f && e > g && e > h) ? e : (f > g && f > h) ? f: (g > h) ? g : h);
+
+        document.getElementById("one").innerHTML = "The greatest Number is " + result;
+        document.getElementById("two").innerHTML = "The greatest Number is " + result1;
+        document.getElementById("three").innerHTML = "The greatest Number is " + result2;
+
+    </script>
+</body>
+
+</html>

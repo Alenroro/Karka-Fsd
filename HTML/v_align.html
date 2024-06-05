@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        h1,
+        p {
+            text-align: center;
+        }
+
+        #main {
+            height: 700px;
+            width: 600px;
+        }
+
+        #top {
+            height: 600px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 40px;
+            position: relative;
+            float: left;
+        }
+
+        #mid {
+            height: 600px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 40px;
+            position: absolute;
+            left: 200px;
+            float: left;
+        }
+
+        #bot {
+            height: 600px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 40px;
+            position: absolute;
+            left: 400px;
+            float: left;
+        }
+
+        #one {
+            height: 50px;
+            width: 80px;
+            float: left;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            color: royalblue;
+        }
+
+        #two {
+            height: 50px;
+            width: 80px;
+            float: left;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            color: royalblue;
+            position: absolute;
+            top: 270px;
+        }
+
+        #three {
+            height: 50px;
+            width: 80px;
+            float: left;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            color: royalblue;
+            position: absolute;
+            top: 520px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Vertical Align</h1>
+        <div id="top">
+            <div id="one">
+                <p>Top</p>
+            </div>
+        </div>
+        <div id="mid">
+            <div id="two">
+                <p>Middle</p>
+            </div>
+        </div>
+        <div id="bot">
+            <div id="three">
+                <p>Bottom</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

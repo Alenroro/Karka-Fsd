@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        #clock {
+            height: 270px;
+            width: 270px;
+            border-radius: 50%;
+            background-color: grey;
+            border: 1px solid black;
+            position: relative;
+            top: 50px;
+            left: 500px;
+            box-shadow: 1px 1px grey, 1.5px 1.5px grey, 2px 2px grey;
+        }
+
+        #twelve {
+            position: absolute;
+            left: 126px;
+            top: 6px;
+        }
+
+        #eleven {
+            position: absolute;
+            left: 71px;
+            top: 27px;
+        }
+
+        #ten {
+            position: absolute;
+            left: 26px;
+            top: 72px;
+        }
+
+        #nine {
+            position: absolute;
+            left: 10px;
+            top: 126px;
+        }
+
+        #eight {
+            position: absolute;
+            left: 26px;
+            top: 184px;
+        }
+
+        #seven {
+            position: absolute;
+            left: 71px;
+            top: 231px;
+        }
+
+        #six {
+            position: absolute;
+            left: 134px;
+            top: 243px;
+        }
+
+        #five {
+            position: absolute;
+            left: 195px;
+            top: 227px;
+        }
+
+        #four {
+            position: absolute;
+            left: 238px;
+            top: 184px;
+        }
+
+        #three {
+            position: absolute;
+            left: 248px;
+            top: 126px;
+        }
+
+        #two {
+            position: absolute;
+            left: 238px;
+            top: 72px;
+        }
+
+        #one {
+            position: absolute;
+            left: 195px;
+            top: 27px;
+        }
+
+.div{
+    font-size: 20px;
+    color: darkorange;
+}
+
+        #hour,
+        #minute,
+        #second {
+            position: absolute;
+            background: black;
+            border-radius: 10px;
+            transform-origin: bottom;
+        }
+
+        #hour {
+            width: 1.8%;
+            height: 25%;
+            top: 25%;
+            left: 48.85%;
+            opacity: 0.8;
+        }
+
+        #minute {
+            width: 1.6%;
+            height: 30%;
+            top: 19%;
+            left: 48.9%;
+            opacity: 0.8;
+        }
+
+        #second {
+            width: 1%;
+            height: 40%;
+            top: 9%;
+            left: 49.25%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock">
+        <div class="div" id="one"> 1</div>
+        <div class="div" id="two"> 2</div>
+        <div class="div" id="three"> 3</div>
+        <div class="div" id="four"> 4</div>
+        <div class="div" id="five"> 5</div>
+        <div class="div" id="six"> 6</div>
+        <div class="div" id="seven"> 7</div>
+        <div class="div" id="eight"> 8</div>
+        <div class="div" id="nine"> 9</div>
+        <div class="div" id="ten"> 10</div>
+        <div class="div" id="eleven">11</div>
+        <div class="div" id="twelve"> 12</div>
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <script>
+        setInterval(() => {
+            d = new Date();
+            hr = d.getHours();
+            min = d.getMinutes();
+            sec = d.getSeconds();
+            hr_rotation = 30 * hr + min / 2;
+            min_rotation = 6 * min;
+            sec_rotation = 6 * sec;
+
+            hour.style.transform = `rotate(${hr_rotation}deg)`;
+            minute.style.transform = `rotate(${min_rotation}deg)`;
+            second.style.transform = `rotate(${sec_rotation}deg)`;
+        }, 1000);
+    </script>
+</body>
+
+</html>

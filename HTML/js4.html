@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style></style>
+</head>
+
+<body>
+    <div id="one">
+        <h2 id="text1"></h2>
+    </div>
+    <div id="two">
+        <h2 id="text2"></h2>
+    </div>
+    <div id="three">
+        <h2 id="text3"></h2>
+    </div>
+    <div id="four">
+        <h2 id="text4"></h2>
+    </div>
+    <div id="five">
+        <h2 id="text5"></h2>
+        <button onclick="document.getElementById('text5').innerHTML = 'The Answer is ' + add "> ADD</button>
+    </div>
+
+    <script>
+        var num1 = 7;
+        var num2 = 2;
+        var square = num1 ** 2;
+        document.getElementById("text1").innerHTML = "square is " + square;
+        var remainder = num1 % num2;
+        document.getElementById("text2").innerHTML = "Remainder is " + remainder;
+
+        var a = "5";
+        var b = 5;
+        var a1 = 5;
+        var b1 = 5;
+        var result = a1 == b1;
+        document.getElementById("text3").innerHTML = "The Answer is " + result;
+        var result1 = a === b;
+        document.getElementById("text4").innerHTML = "The Answer is " + result1;
+
+        var add = num1 + num2;
+        
+    </script>
+</body>
+
+</html>

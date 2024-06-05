@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message print</title>
+    <style>
+        body {
+            background-color: palegoldenrod;
+        }
+
+        div {
+            height: 250px;
+            width: 600px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+            position: relative;
+            top: 260px;
+            left: 400px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px gray, 4px 4px 5px gray;
+        }
+
+        #one {
+            position: absolute;
+            left: 120px;
+            top: 0px;
+        }
+
+        #two {
+            position: absolute;
+            top: 130px;
+            left: 180px;
+        }
+
+        #msg {
+            position: absolute;
+            top: 85px;
+            left: 100px;
+            width: 400px;
+        }
+
+        #para {
+            font-size: 20px;
+            color: blue;
+            position: absolute;
+            top: 180px;
+            left: 265px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 id="one">A Message You Would Like To Print</h2>
+        <form>
+            <input type="text" id="msg" name="message" onchange="change()" >
+        </form>
+        <h2 id="two">Last Message Delivered!</h2>
+        <p id="para"></p>
+
+        <script>
+            function change() {
+                var text = this.msg.value;
+                document.getElementById('para').innerHTML = text;
+            }
+        </script>
+    </div>
+</body>
+
+</html>

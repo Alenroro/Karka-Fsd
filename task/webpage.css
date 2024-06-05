@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: teal;
+  position: relative;
+}
+img {
+  height: 60px;
+  width: 150px;
+  margin-left: 20px;
+}
+.tag {
+  position: absolute;
+  top: 23px;
+  right: 130px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  margin-left: 20px;
+}
+section {
+  height: 1200px;
+  width: 100%;
+  background-color: white;
+}
+
+.mid1 {
+  height: 400px;
+  width: 80%;
+  margin-left: 10%;
+}
+#txt {
+  float: left;
+}
+
+.button {
+  height: 40px;
+  width: 140px;
+  background-color: teal;
+  border-radius: 10px;
+  border: 0px;
+  color: white;
+}
+#btn1 {
+  position: absolute;
+  top: 300px;
+  right: 1000px;
+}
+
+#img {
+  height: 100%;
+  width: 45%;
+  float: right;
+  background-image: url(./../images/image6.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mid2 {
+  height: 600px;
+  width: 80%;
+  margin-left: 10%;
+}
+.one {
+  float: left;
+}
+.two {
+  float: left;
+  position: absolute;
+  right: 580px;
+}
+.three {
+  float: right;
+}
+
+.img1 {
+  height: 300px;
+  width: 340px;
+  background-color: teal;
+}
+.mid3 {
+  height: 250px;
+  width: 100%;
+  background-color: teal;
+  color: white;
+}
+.four {
+  height: 300px;
+  width: 400px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+footer {
+  height: 50px;
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: larger;
+  background-color: white;
+}

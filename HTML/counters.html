@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>counters</title>
+    <style>
+        body {
+            counter-reset: head;
+        }
+
+        h2::before
+        {
+            counter-increment: head;
+            content: counter(head)".";
+        }
+        p{
+            counter-reset: sub;
+        }
+        p::before
+        {
+            margin-left: 20px;
+            counter-increment: sub;
+            content: counter(head)"." counter(sub)". ";
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hyper Text Markup Language</h2>
+    <p>HTML contains series of elements</p>
+    <p>HTML attributes provides additional information</p>
+    <p>Semantic elements used in HTML</p>
+    <h2>Cascading Style Sheet</h2>
+    <p>CSS is used to style and layout the webpages</p>
+    <p>CSS describes how HTML elements should be displayed</p>
+    <p>CSS saves lot of work</p>
+    <h2>Javascript</h2>
+    <p>JS is the proramming language</p>
+    <p>JS is a lightweight programming language</p>
+    <p>js is easy to learn</p>
+</body>
+
+</html>

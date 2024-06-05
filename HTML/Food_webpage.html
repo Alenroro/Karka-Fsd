@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Food</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        #main {
+            height: 3500px;
+            width: 100%;
+            position: absolute;
+
+        }
+
+        header {
+            height: 450px;
+            width: 100%;
+        }
+
+        #box {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            position: absolute;
+            left: 50px;
+        }
+
+        #head {
+            height: 50px;
+            width: 100%;
+        }
+
+        #list1 li {
+            list-style-type: none;
+            display: inline;
+            padding: 0px 20px;
+
+        }
+
+        #list1 {
+            position: absolute;
+            top: 10px;
+            left: 55%;
+        }
+
+        li a {
+            text-decoration: none;
+            color: green;
+        }
+
+        a:hover {
+            text-decoration: underline green solid 1px;
+        }
+
+        #head1 {
+            height: 350px;
+            width: 100%;
+
+        }
+
+        #head11 {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        h2 {
+            color: green;
+            margin: 20px;
+            font-size: 25px;
+        }
+
+        p {
+            margin: 20px;
+            text-align: left;
+        }
+
+        #button {
+            height: 40px;
+            width: 130px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .butn1 {
+            background-color: lightgrey;
+            color: green;
+            border: 1px solid green;
+        }
+
+        .butn2 {
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+        }
+        .butn3 {
+            height: 40px;
+            width: 130px;
+            margin-top: 5px;
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+        }
+        #head12 {
+            height: 100%;
+            width: 50%;
+            float: right;
+        }
+
+        #head2 {
+            height: 50px;
+            width: 100%;
+            background-color: green;
+        }
+
+        th {
+            color: white;
+            width: 500px;
+        }
+
+        section {
+            height: 3000px;
+            width: 100%;
+        }
+
+        .sec {
+            height: 400px;
+            width: 100%;
+        }
+
+        .sec1 {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        .sec2 {
+            height: 100%;
+            width: 50%;
+            float: right;
+        }
+
+        .sec3 {
+            height: 120px;
+            width: 98%;
+            background-color: lightgrey;
+            border-left: 5px solid green;
+            border-right: 5px solid green;
+            margin: 5px;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: green;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .para {
+            margin: 10px;
+        }
+
+        img {
+            height: 96%;
+            width: 96%;
+            margin: 10px;
+        }
+
+        .list {
+            list-style-type: square;
+        }
+
+        .img {
+            height: 400px;
+            width: 350px;
+            float: left;
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+
+        .image {
+            height: 250px;
+            width: 350px;
+            margin: -1px;
+        }
+
+        .menu {
+            margin: 0px;
+            text-align: left;
+        }
+
+        #bott {
+            height: 500px;
+            width: 100%;
+        }
+
+        #freq {
+            height: 500px;
+            width: 100%;
+        }
+
+        #fhead {
+            height: 100px;
+            width: 100%;
+        }
+
+        #freq1 {
+            height: 400px;
+            width: 50%;
+            float: left;
+        }
+
+        #freq2 {
+            height: 400px;
+            width: 50%;
+            float: right;
+        }
+
+        .freq11 {
+            height: 50%;
+            width: 100%;
+        }
+
+        .freq21 {
+            height: 50%;
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .li {
+            color: green;
+            margin: 0px;
+        }
+
+
+        #bgimg {
+            height: 500px;
+            background-image: url(./../images/image7.jpg);
+            margin: 20px;
+            background-size: cover;
+        }
+
+        .bg {
+            padding-left: 200px;
+            padding-top: 180px;
+            font-size: 40px;
+            color: red;
+        }
+
+        #order {
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+            margin-left: 850px;
+            height: 40px;
+            width: 130px;
+        }
+
+        #sub {
+            height: 258px;
+            width: 100%;
+        }
+
+        .letter {
+
+            margin: 0px;
+            text-align: center;
+        }
+
+        input[type=submit] {
+            border: 1px solid green;
+            background-color: green;
+            color: white;
+            margin: 0px;
+            height: 30px;
+            width: 100px;
+        }
+
+        input[type=text] {
+            height: 30px;
+            border: 2px solid green;
+            margin-left: 550px;
+        }
+
+        footer {
+            height: 50px;
+            width: 100%;
+            background-color: green;
+            color: white;
+        }
+
+        #foot1 {
+            height: 100%;
+            width: 35%;
+            text-align: center;
+            float: left;
+        }
+
+        #foot2 {
+            height: 100%;
+            width: 35%;
+            text-align: center;
+            float: left;
+        }
+
+        #foot3 {
+            height: 100%;
+            width: 30%;
+            float: right;
+            text-align: center;
+
+        }
+
+        i {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #margin {
+            margin-left: 10px;
+        }
+
+        #margin1 {
+            margin-top: 5px;
+            margin-left: 10px;
+            height: 40px;
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- header-->
+
+        <header>
+            <div id="head">
+                <div id="box"></div>
+                <ol id="list1">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="about.html">Food Reviews</a></li>
+                    <li><a href="intrest.html">Diet Based</a></li>
+                    <li><a href="tokyo.html">Blog</a></li>
+                    <li><a href="boring.html">Contact</a></li>
+                </ol>
+            </div>
+            <div id="head1">
+                <div id="head11">
+                    <h2>Good Food choices <br>are Good <br>Investments</h2>
+                    <p>Food is any substance consumed to provide nutritional support for an organism. Food is usually of
+                        plant, animal, or fungal origin, and contains essential nutrients, such as carbohydrates, fats,
+                        proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the
+                        organism's cells to provide energy, maintain life, or stimulate growth.</p>
+                    <button id="button" class="butn1"> Learn More</button>
+                    <button id="button" class="butn2">Join Now</button>
+                </div>
+
+                <div id="head12">
+
+                </div>
+            </div>
+            <div id="head2">
+                <table>
+                    <tr>
+                        <th>1287+ <br> protien</th>
+                        <th>6428+ <br> Calcium</th>
+                        <th>1004+ <br> Vitamins</th>
+                        <th>1287+ <br> carbohydrates</th>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <section>
+            <div class="sec">
+                <div class="sec1">
+                    <img src="./../images/image1.jpeg" alt="food">
+                </div>
+                <div class="sec2">
+                    <div class="sec3">
+                        <h3>We Pride Overselves on <br>making real food from <br> the best ingredients</h3>
+                    </div>
+                    <p class="para">Reboot your lunch routine with these healthy salads that offer all the nutritional
+                        benefits of
+                        heaps of greens (reds and oranges, too), yet are satisfying and truly delicious. No matter which
+                        types of salads you crave, make sure to start with a healthy salad dressing, preferably one
+                        that's homemade (psst, check out our vegan salad dressings).</p>
+                    <button id="button" class="butn2">View More</button>
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="sec1">
+                    <div class="sec3">
+                        <h3>We Pride Overselves on <br>making real food from <br> the best ingredients</h3>
+                    </div>
+                    <p class="para">Reboot your lunch routine with these healthy salads that offer all the nutritional
+                        benefits of heaps of greens yet are satisfying and truly delicious.</p>
+                    <ol class="list">
+                        <li>Mixed Fruit Toast</li>
+                        <li>Cucumber Sandwich</li>
+                        <li>Mixed Platter</li>
+                        <li>Chicken tortilla</li>
+                    </ol>
+                    <button id="button" class="butn2">View More</button>
+                </div>
+                <div class="sec2">
+                    <img src="./../images/image2.jpeg" alt="food">
+                </div>
+            </div>
+
+            <div class="sec">
+                <div class="sec1">
+                    <div class="sec3">
+                        <h3>We Pride Overselves on <br>making real food from <br> the best ingredients</h3>
+                    </div>
+                    <p class="para">Reboot your lunch routine with these healthy salads that offer all the nutritional
+                        benefits of heaps of greens yet are satisfying and truly delicious.</p>
+                    <ol class="list">
+                        <li>Almond Pancake</li>
+                        <li>Orange Pie</li>
+                        <li>Vegetable Skewer</li>
+                        <li>Salmon Steak with Cherry Tomatores</li>
+                    </ol>
+                    <button id="button" class="butn2">View More</button>
+                </div>
+                <div class="sec2">
+                    <img src="./../images/image3.jpeg" alt="food">
+                </div>
+            </div>
+
+
+            <div id="bott">
+                <div class="img">
+                    <img src="./../images/image4.jpeg" alt="food" class="image">
+                    <h5>Steak with Veggies</h5>
+                    <p class="menu">Time: 30 - 45 Minutes | Serving | <br>
+                        $15.00  <del>$30.00</del></p>
+                    <button class="butn3">View More</button>
+                </div>
+                <div class="img">
+                    <img src="./../images/image5.jpeg" alt="food" class="image">
+                    <h5>Mixed Vegetable Salad with Olive Oil</h5>
+                    <p class="menu">Time: 5 - 10 Minutes | Serving | <br>
+                        $5.00  <del>$10.00</del></p>
+                    <button class="butn3">View More</button>
+                </div>
+                <div class="img">
+                    <img src="./../images/image6.jpeg" alt="food" class="image">
+                    <h5>Chocolate Brownie</h5>
+                    <p class="menu">Time: 15 - 30 Minutes | Serving | <br>
+                        $10.00  <del>$20.00</del></p>
+                    <button class="butn3">View More</button>
+                </div>
+            </div>
+
+            <div id="freq">
+                <div id="fhead">
+                    <h4>Frequently Asked Question</h4>
+                </div>
+                <div id="freq1">
+                    <div class="freq11">
+                        <ul>
+                            <li class="li">What are the sources of vitamin D and B12?</li>
+                        </ul>
+                        <p>The main source of vitamin D is from the action of sunlight on the skin. Vitamin B12 is
+                            required for red blood cell formation and a healthy nervous system. The vitamin is present
+                            in a variety of foods, but mainly meat, fish, eggs and dairy products and some fortified
+                            products (eg, milk, soya milks, cereals).</p>
+                    </div>
+                    <div class="freq11">
+                        <ul>
+                            <li class="li">Hydration: how much water should I be drinking daily?</li>
+                        </ul>
+                        <p>Regular drinks are necessary to replace fluid lost during the day. Water is a major
+                            constituent of the body and has many functions including transporting nutrients and
+                            compounds in blood, removing waste-products that are then passed in urine. Water regulates
+                            the body's temperature and without enough water, people can quickly become dehydrated</p>
+                    </div>
+                </div>
+                <div id="freq2">
+                    <div class="freq21">
+                        <ul>
+                            <li class="li">Is organic produce healthier than its non-organic counterparts?</li>
+                        </ul>
+                        <p>Organic food is the product of an agricultural or aqua-cultural system of farming that places
+                            a strong emphasis on environmental protection and animal welfare. While organic and
+                            non-organically produced food may appear very similar, the systems of farming involved in
+                            their production can be very different.</p>
+                    </div>
+                    <div class="freq21">
+                        <ul>
+                            <li class="li">Why Should I Eat a High-Fiber Diet?</li>
+                        </ul>
+                        <p>Dietary fiber from fruits, vegetables, whole grains and legumes can help maintain a healthy
+                            weight, lower blood cholesterol and glucose levels, help food pass through the digestive
+                            system, promote regularity and prevent constipation. Aim for at least 25 grams per day.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bgimg">
+
+                <p class="bg">Freshly cooked and baked food items</p>
+                <button id="order">Order Now</button>
+
+            </div>
+            <div id="sub">
+                <h4>Hurry up! Subscribe to pur Newsletter <br>and get 25% Off</h4>
+                <p class="letter">Get notified every time when new items are available
+                <form>
+                    <input type="text" id="search" value="eg@gmail.com">
+                    <input type="submit" value="Subscribe">
+                </form>
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div id="foot1">
+                <p id="margin">&copy;2009 All Copyrights and contents have been registered.</p>
+
+            </div>
+            <div id="foot2">
+                <i class="fa fa-facebook-square" id="logo1" style="font-size:28px;color:white"></i>
+                <i class="fa fa-twitter" style="font-size:28px;color:white"></i>
+                <i class="fa fa-instagram" style="font-size:28px;color:white"></i>
+            </div>
+            <div id="foot3">
+                <button id="margin1" class="butn1"> <b>Visit Us More</b></button>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

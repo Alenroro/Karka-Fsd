@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style></style>
+</head>
+
+<body>
+    <script>
+        var result = "";
+        for (var i = 1; i <= 5; i++) {
+
+            for (var j = 1; j <= i; j++) {
+                result += j;
+            }
+            document.write(result + "<br>");
+            result = "";
+        }
+        document.write('<br/>');
+
+
+        for (var i = 1; i <= 5; i++) {
+
+            for (var j = 1; j <= i; j++) {
+                result += i;
+            }
+            document.write(result + "<br>");
+            result = "";
+        }
+        document.write('<br/>');
+
+
+
+        for (var i = 5; i > 0; i--) {
+
+            for (var j = 1; j <= i; j++) {
+                result += j;
+            }
+            document.write(result + "<br>");
+            result = "";
+        }
+        document.write('<br/>');
+
+
+        for (var i = 5; i > 0; i--) {
+
+            for (var j = 1; j <= i; j++) {
+                result += i;
+            }
+            document.write(result + "<br>");
+            result = "";
+        }
+        document.write('<br/>');
+
+
+        for (var m = 1; m <= 5; m++) {
+            for (var n = 1; n <= m; n++) {
+                document.write("0" + n + " ");
+            }
+            document.write("<br />");
+        }
+        document.write('<br/>');
+
+
+        for (var m = 5; m >= 0; m--) {
+            for (var n = 1; n <= m; n++)
+                document.write("" + n + " ");
+            document.write('<br/>');
+        }
+        for (var m = 1; m <= 5; m++) {
+            for (var n = 1; n <= m; n++)
+                document.write("" + n + " ");
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+
+        for (var m = 1; m < 5; m++) {
+            for (var n = 1; n <= m; n++)
+                document.write("" + n + " ");
+            document.write('<br/>');
+        }
+        for (var m = 5; m >= 0; m--) {
+            for (var n = 1; n <= m; n++)
+                document.write("" + n + " ");
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+
+        var num = 1;
+        for (var m = 1; m <= 5; m++) {
+            for (var n = 1; n <= m; n++)
+                document.write(num++);
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+
+        var n = 5;
+        var result = "";
+        for (var i = 1; i <= n; i++) {
+            for (var j = 0; j < i; j++) {
+                result += "#";
+            }
+            result += "\n";
+        }
+        for (var i = 1; i <= n - 1; i++) {
+            for (var j = 0; j < n - i; j++) {
+                result += "&";
+            }
+            result += "\n";
+        }
+        console.log(result);
+
+
+        var n = 5;
+        var result = "";
+        for (var i = 1; i <= n; i++) {
+            for (var j = 0; j < i; j++) {
+                result += "*";
+            }
+            result += "\n";
+        }
+        console.log(result);
+
+
+        var num, p, q;
+        num = 5;
+        for (var m = 1; m <= num; m++) {
+            if (m % 2 == 0) {
+                p = 1;
+                q = 0;
+            } else {
+                p = 0;
+                q = 1;
+            }
+            for (var n = 1; n <= m; n++)
+                if (n % 2 == 0)
+                    document.write("" + p + " ");
+                else
+                    document.write("" + q + " ");
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+
+        var i = 5;
+        while (i >= 1) {
+            var j = 5;
+            while (j >= i) {
+                document.write("" + j + " ");
+                j--;
+            }
+            i--;
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+
+
+        var m, n, k;
+        for (m = 1; m <= 4; m++) {
+            for (n = 4; n >= (m - 1) * 2 - 1; n--)
+                document.write(" ");
+            document.write(m);
+            for (n = 2; n <= (m - 1) * 4; n++)
+                document.write(" ");
+            if (m > 1)
+                document.write(m);
+            document.write("<br/>");
+        }
+        for (m = 3; m >= 1; m--) {
+            for (n = 4; n >= (m - 1) * 2 - 1; n--)
+                document.write(" ");
+            document.write(m);
+            for (n = 2; n <= (m - 1) * 4; n++)
+                document.write(" ");
+            if (m > 1)
+                document.write(m);
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+
+
+        var m, n;
+        for (m = 1; m <= 5; m++) {
+            for (n = 5; n >= m; n--) {
+                document.write(m);
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+
+
+        var m, n, k;
+        for (m = 4; m >= 1; m--) {
+            for (n = 1; n <= 4; n++) {
+                if (n <= m)
+                    document.write(n);
+                else
+                    document.write(" ");
+            }
+            for (n = 4; n >= 1; n--) {
+                if (n <= m)
+                    document.write(n);
+                else
+                    document.write(" ");
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+
+
+        var m, n, k;
+        k = 1;
+        for (m = 1; m <= 5; m += 2) {
+            for (n = 5; n >= 1; n--) {
+                if (n > m)
+                    document.write(" ");
+                else
+                    document.write(k++);
+            }
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+
+
+        var i, j;
+        for (i = 1; i <= 4; i++) {
+            for (j = 1; j <= i; j++)
+                document.write(j);
+            for (j = i - 1; j >= 1; j--)
+                document.write(j);
+            document.write("<br/>");
+        }
+        document.write("<br/>");
+
+
+        var i, j, k;
+        for (i = 1; i <= 5; i++) {
+            for (j = 1; j <= 5; j++) {
+                if (j <= i)
+                    document.write(j);
+                else
+                    document.write(" ");
+            }
+            for (j = 5; j >= 1; j--) {
+                if (j <= i)
+                    document.write(j);
+                else
+                    document.write(" ");
+            }
+            document.write("<br/>");
+        }
+        document.write('<br/>');
+
+
+        var m, n, k;
+        for (m = 1; m <= 5; m++) {
+            for (k = m; k > 1; k--)
+                document.write(k);
+            for (n = 1; n <= 6 - m; n++)
+                document.write(n);
+            document.write("</br>");
+        }
+        document.write('<br/>');
+
+
+        var i, j;
+        for (i = 1; i <= 10; i++) {
+            for (j = 1; j <= i; j++) {
+                document.write(i * j);
+            }
+            document.write("<br/>");
+        }
+        document.write('<br/>');
+
+
+        var i, j, k;
+        var n = 5;
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; ++j)
+                document.write(j);
+            for (k = n - i; k >= 1; k--)
+                document.write("*");
+            document.write('<br/>');
+        }
+        document.write('<br/>');
+    </script>
+</body>
+
+</html>

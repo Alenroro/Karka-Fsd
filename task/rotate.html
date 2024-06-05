@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        margin-left: 500px;
+        margin-top: 100px;
+        background-color: lightgreen;
+        animation: rotate 1s infinite reverse;
+      }
+      .box1 {
+        height: 300px;
+        width: 300px;
+        margin-left: 500px;
+        margin-top: 100px;
+        background-color: lightgreen;
+        animation: colorchange 5s infinite;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(90deg);
+        }
+        
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes colorchange {
+        0% {
+          background-color: lightgreen;
+        }
+        50%{
+            background-color: red;
+        }
+        100% {
+         background-color: teal;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1"></div>
+  </body>
+</html>

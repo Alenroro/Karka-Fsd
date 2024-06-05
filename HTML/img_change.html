@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image change</title>
+    <style></style>
+</head>
+
+<body>
+    <img id="image" src="./../images/spider.jpg" style="width:500px">
+    <p></p>
+
+    <script>
+
+        var imageSources = ["./../images/cat.jpg","./../images/dog.jpg","./../images/fox.jpg","./../images/frog.jpg"]
+
+        var index = 0;
+        setInterval(function () {
+            if (index === imageSources.length) {
+                index = 0;
+            }
+            document.getElementById("image").src = imageSources[index];
+            index++;
+        }, 2000);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title></title>
+            <style>
+                #div{
+                    height: 300px;
+                    width: 300px;
+                    background-image: url(./../images/cat.jpg);
+                    background-size: contain;
+                    border: 10px solid black;
+                    border-radius: 100%;
+                    border-image: linear-gradient(to left,red,yellow,green);
+                    border-image-slice: 1;
+                    margin: auto;
+                    float: left;
+
+                }
+                #div1{
+                    height: 300px;
+                    width: 300px;
+                    border: 10px solid black;
+                    border-radius: 100%;
+                    border-image: linear-gradient(to left,red,yellow,green);
+                    border-image-slice: 1;
+                    margin-left: 50px;
+                    float: left;
+
+                }
+                img{
+                    border-radius: 100%;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="div"></div>
+            <div id="div1">
+                <img src="./../images/dog.jpg" alt="dog" height="300px" width="300px">
+            </div>
+        </body>
+    </html>

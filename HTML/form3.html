@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form </title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            h1{
+                color: blue;
+                text-align: center;
+            }
+            #box{
+                height: 1000px;
+                width: 100%;
+            }
+            #top{
+                height: 100px;
+                width: 100%;
+            }
+            #mid{
+                height: 800px;
+                width: 100%;
+            }
+            #mid1{
+                height: 100%;
+                width: 10%;
+                float: left;
+            }
+            #mid2{
+                height: 100%;
+                width: 80%;
+                float: left;
+                background-color: cornflowerblue;
+                color: white;
+                border: 3px dashed black;
+            }
+            #mid3{
+                height: 100%;
+                width: 10%;
+                float: rightt;
+            }
+            #bott{
+                height: 100px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="box">
+        <div id="top">
+            <h1><u>Student Registration Form Using Table in HTML</u></h1>
+        </div>
+        <div id="mid">
+            <div id="mid1"></div>
+            <div id="mid2">
+                <b>
+                   <form action="result.html" method="post">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="fname">First Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="fname" name="fname" placeholder="Enter your First Name">
+                                (Max 50 Characters Allowed)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lname">Last Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="lname" name="lname" placeholder="Enter your Last Name">
+                                (Max 50 Characters Allowed)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email" placeholder="alk******@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="num">Mobile Number:</label>
+                            </td>
+                            <td>
+                                <input type="number" id="num" name="num" placeholder="6478******" pattern="[0-9]{10}">
+                                (10 Digit Allowed)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Gender:</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="dob">Date of Birth(DOB):</label>
+                            </td>
+                            <td>
+                                <input type="date" id="dob" name="dob">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="add">Address:</label>
+                            </td>
+                            <td>
+                                <textarea id="add" name="Address" style="height: 100px; width: 300px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="city">City:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="city" name="city" placeholder="City Name">
+                                (Max 50 Character Allowed) 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="code">Pin Code:</label>
+                            </td>
+                            <td>
+                                <input type="number" id="code" name="code" pattern="[0-9]{6}" placeholder="2****0">
+                                (Max 6 NUmbers Allowed)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="state">State:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="state" name="state" placeholder="state Name">
+                                (Max 50 Character Allowed)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="country">Country:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="country" name="country" placeholder="Country Name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="qual">qualties:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="drawing">
+                                <label for="qual">Drawing</label>
+                                <input type="checkbox" id="qual" name="qual" value="singing">
+                                <label for="qual">Singing</label>
+                                <input type="checkbox" id="qual" name="qual" value="dancing">
+                                <label for="qual">Dancing</label>
+                                <input type="checkbox" id="qual" name="qual" value="sketching">
+                                <label for="qual">sketching</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="others">
+                                <label for="qual">Others</label>
+                                <label for="text"></label>
+                                <input type="text" id="text" name="text" placeholder="Ex- Teaching">
+                                (Max 50 Character Allowed)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="qual">Qualification:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="High School(10th)">
+                                <label for="qual">High School (10th)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="Higher SChool(12th)">
+                                <label for="qual">Higher SChool (12th)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="Graduation(Bachelors)">
+                                <label for="qual">Graduation (Bachelors)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="Post Graduation(Masters)">
+                                <label for="qual">Post Graduation (Masters)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="qual" name="qual" value="PHD">
+                                <label for="qual">PHD</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="course">Courses Applied For:</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="BCA">
+                                <label for="course">BCA(Bachelor of Computer Application)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="B.Com">
+                                <label for="course">B.Com(Bachelor of Commerce)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="B.Sc">
+                                <label for="course">B.Sc(Bachelor of SCience)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="BA">
+                                <label for="course">BA(Bachelor of Arts)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="MCA">
+                                <label for="course">MCA(Master of Computer Applications)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="M.Com">
+                                <label for="course">M.Com(Master of Commerce)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="M.Sc">
+                                <label for="course">M.Sc(Master of  science)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="checkbox" id="course" name="course" value="MA">
+                                <label for="course">MA(Master of Arts)</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <input type="submit" style="margin-left: 300px;">
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+                   </form>
+                </b>
+            </div>
+            <div id="mid3"></div>
+        </div>
+        <div id="bott"></div>
+       </div> 
+    </body>
+</html>

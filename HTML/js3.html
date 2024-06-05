@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        #div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            margin: 50px auto;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div"></div>
+    <button onclick="backgroundColor()">bg color</button>
+    <button onclick="size()">size</button>
+    <button onclick="borderRadius()">circle</button>
+    <script>
+        function backgroundColor() {
+            document.getElementById("div").style.backgroundColor="palegreen";
+        }
+
+        function size() {
+            document.getElementById("div").style.width="500px";
+            document.getElementById("div").style.height="500px";
+        }
+
+        function borderRadius() {
+            document.getElementById("div").style.borderRadius="100%";
+        }
+    </script>
+</body>
+
+</html>

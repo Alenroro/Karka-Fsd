@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --green: green;
+            --blue: blue;
+            --black: black;
+            --white: white;
+            --height: 300px;
+            --width: 300px;
+            --left: left;
+            --border:1px solid black;
+            --align:left;
+        }
+
+        #div1 {
+            height: var(--height);
+            width: var(--width);
+            background-color: var(--black);
+            color: var(--white);
+            text-align: var(--align);
+            float: var(--left);
+            border: var(--border);
+        }
+
+        #div2 {
+            height: var(--height);
+            width: var(--width);
+            background-color: var(--green);
+            border: var(--border);
+            float: var(--left);
+            color: var(--white);
+            text-align: var(--align);
+        }
+
+        #div3 {
+            height: var(--height);
+            width: var(--width);
+            background-color: var(--blue);
+            text-align: var(--align);
+            border: var(--border);
+            float: var(--left);
+            color: var(--white);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>Left Side</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt eaque est molestiae consectetur eos
+            architecto aspernatur. Impedit, nemo fuga, incidunt ratione aperiam, accusamus quos odit nihil accusantium
+            optio vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, voluptates vel cum culpa
+            quod, dolore, commodi voluptas nulla itaque hic atque saepe at eveniet magni. At quis tempore cumque!
+            Suscipit
+        </p>
+    </div>
+    <div id="div2">
+        <h2>Middle Side</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt eaque est molestiae consectetur eos
+            architecto aspernatur. Impedit, nemo fuga, incidunt ratione aperiam, accusamus quos odit nihil accusantium
+            optio vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, voluptates vel cum culpa
+            quod, dolore, commodi voluptas nulla itaque hic atque saepe at eveniet magni. At quis tempore cumque!
+            Suscipit
+        </p>
+    </div>
+    <div id="div3">
+        <h2>Right Side</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt eaque est molestiae consectetur eos
+            architecto aspernatur. Impedit, nemo fuga, incidunt ratione aperiam, accusamus quos odit nihil accusantium
+            optio vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, voluptates vel cum culpa
+            quod, dolore, commodi voluptas nulla itaque hic atque saepe at eveniet magni. At quis tempore cumque!
+            Suscipit
+        </p>
+    </div>
+</body>
+
+</html>

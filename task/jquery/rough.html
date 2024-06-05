@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <h2>CRUD Operations</h2>
+
+    <div>
+        <button id="btnAdd">Add</button>
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+    // Mock data for demonstration
+    var data = [
+        { id: 1, text: "Item 1" },
+        { id: 2, text: "Item 2" },
+        { id: 3, text: "Item 3" }
+    ];
+
+    // Function to render the list
+    function renderList() {
+        $("#list").empty();
+        $.each(data, function (index, item) {
+            $("#list").append("<li data-id='" + item.id + "'>" + item.text + " <button class='btnEdit'>Edit</button> <button class='btnDelete'>Delete</button></li>");
+        });
+    }
+
+    // Initial render
+    renderList();
+
+    // Add operation
+    $("#btnAdd").click(function () {
+        var newItem = { id: data.length + 1, text: "New Item" };
+        data.push(newItem);
+        renderList();
+    });
+
+    // Edit operation
+    $(document).on("click", ".btnEdit", function () {
+        var listItem = $(this).closest("li");
+        var itemId = listItem.data("id");
+        var newText = prompt("Enter new text:", listItem.text().trim());
+
+        // Update the data
+        var itemToUpdate = data.find(item => item.id === itemId);
+        if (itemToUpdate) {
+            itemToUpdate.text = newText;
+            renderList();
+        }
+    });
+
+    // Delete operation
+    $(document).on("click", ".btnDelete", function () {
+        var listItem = $(this).closest("li");
+        var itemId = listItem.data("id");
+
+        // Remove the item from data
+        data = data.filter(item => item.id !== itemId);
+
+        // Render the updated list
+        renderList();
+    });
+});
+
+    </script>
+</body>
+</html>

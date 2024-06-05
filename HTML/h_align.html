@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        #main {
+            height: 500px;
+            width: 1000px;
+        }
+
+        .box {
+            height: 80px;
+            width: 1000px;
+            border: 1px solid black;
+            margin: 40px;
+            position: relative;
+
+        }
+
+        #one {
+            height: 70%;
+            width: 20%;
+            float: left;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            color: royalblue;
+        }
+
+        #two {
+            height: 70%;
+            width: 20%;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            color: royalblue;
+            position: absolute;
+            left: 400px;
+        }
+
+        #three {
+            height: 70%;
+            width: 20%;
+            float: right;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <h1>Horizontal Align</h1>
+        <div class="box">
+            <div id="one">
+                <p>LEFT</p>
+            </div>
+        </div>
+        <div class="box">
+            <div id="two">
+                <p>CENTER</p>
+            </div>
+        </div>
+        <div class="box">
+            <div id="three">
+                <p>RIGHT</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

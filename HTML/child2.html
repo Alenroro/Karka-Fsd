@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>child</title>
+        <style>
+            p{
+                color: black;
+            }
+            div :not(p){
+                color: white;
+                background-color: darkblue;
+            }
+            body :empty{
+                background-color: violet;
+                height: 50px;
+                width: 30px;
+            }
+            section :only-child{
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>house</p>
+            <i>office</i>
+            <p>name</p>
+            <u>title</u>
+        </div>
+        <p></p>
+        <p></p>
+        <section>
+                <p>lion</p>
+        </section>
+          <pre></pre>
+          <u></u>  
+    </body>
+</html>

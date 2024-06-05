@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+      div {
+        height: 500px;
+        width: 1000px;
+        background-color: lightblue;
+        margin: 10px auto;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+          "head head head head head"
+          "nav art art art art"
+          "foot foot foot foot foot";
+      }
+      header {
+        grid-area: head;
+        background-color: lightgreen;
+      }
+      nav {
+        grid-area: nav;
+        background-color: lightcoral;
+      }
+      article {
+        grid-area: art;
+        background-color: lightseagreen;
+      }
+      footer {
+        grid-area: foot;
+        background-color: lightsalmon;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <header></header>
+      <nav></nav>
+      <article></article>
+      <footer></footer>
+    </div>
+  </body>
+</html>

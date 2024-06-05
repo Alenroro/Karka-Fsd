@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.head {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.menu{
+    text-align: center;
+    margin-top: 20px;
+}
+.sec {
+    margin-top: 100px;
+}
+.sec2{
+    margin-top: 100px;
+}
+.button {
+    height: 40px;
+    width: 140px;
+    background-color: teal;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+  }
+#img{
+    background-image: url(./../images/waterfalls.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img{
+    background-color: aqua;
+}
+
+.foot {
+  background-color: black;
+}

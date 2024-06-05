@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #box {
+            height: 200px;
+            width: 500px;
+            background-color: aquamarine;
+            margin-left: 450px;
+        }
+
+        input,label {
+            margin-left: 80px;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sname">surname:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="sname" name="sname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="num" name="num">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register" onsubmit="store()">
+                    </td>
+                </tr>
+            </table>
+        </form>    
+    </div>
+    <p id="text"></p>
+    <script>
+        function store(){
+            var  name =myform.value;
+            document.getElementById("text").innerHTML=name;
+        }
+        var changetojson=JSON.stringify(myform);
+                document.getElementById("text").innerHTML=changetojson;
+                localStorage.setItem("person",changetojson);
+    </script>
+</body>
+
+</html>

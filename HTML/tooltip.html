@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px;
+        }
+
+        .tooltip {
+            position: relative;
+            top: 50%;
+            left: 160px;
+            display: inline-block;
+            text-align: center;
+            border-bottom: 1px dashed blue;
+            font-size: larger;
+        }
+
+        .text {
+            visibility: hidden;
+            width: 200px;
+            border-radius: 10px;
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            left: 120px;
+            top: -10px;
+            z-index: 1;
+        }
+
+        .tooltip:hover .text {
+            visibility: visible;
+        }
+
+
+        .tooltip2 {
+            position: relative;
+            top: 50%;
+            left: 200px;
+            display: inline-block;
+            text-align: center;
+            background-color: lightgray;
+            color: royalblue;
+            border: 2px solid royalblue;
+            box-shadow: 2px 2px royalblue, 3px 3px royalblue;
+            font-size: larger;
+        }
+
+        .text2 {
+            visibility: hidden;
+            width: 200px;
+            border-radius: 10px;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            left: -70px;
+            top: -50px;
+            z-index: 1;
+        }
+
+        .tooltip2:hover .text2 {
+            visibility: visible;
+        }
+
+        .tooltip3 {
+            width: 200px;
+            position: relative;
+            top: 50%;
+            left: 30%;
+            background-color: orangered;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            border-bottom: 1px dashed blue;
+            font-size: larger;
+        }
+
+        .text3 {
+            visibility: hidden;
+            width: 200px;
+            border-radius: 10px;
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            left: -10px;
+            top: 30px;
+            z-index: 1;
+        }
+
+        .tooltip3:hover .text3 {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="tooltip">Hover me over!
+            <div class="text">Thank you for hovering</div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="tooltip2">Learn How
+            <div class="text2">Write the tooltipping tools</div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="tooltip3">Say hi to AboutReact
+            <div class="text3">Hello! AboutReact</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color change</title>
+    <style>
+        #color {
+            height: 100px;
+            width: 150px;
+            margin: 300px 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <button id="color">Change color</button>
+    </div>
+
+    <script>
+        var element = document.getElementById('box');
+        var value = 0;
+        var color = ["palegreen", "red", "green", "blue", "violet", "purple", "lightgreen"];
+        element.style.backgroundColor = color[value];
+
+        function change() {
+            element.style.backgroundColor = color[value];
+            value++;
+            if (value > color.length) {
+                value = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

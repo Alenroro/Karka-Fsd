@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form</title>
+    <style>
+        #one {
+            height: 50px;
+            width: 100%;
+        }
+
+        h2 {
+            float: right;
+            text-decoration-line: underline;
+        }
+
+        #two {
+            height: 600px;
+            width: 100%;
+        }
+
+        ol li {
+            list-style-type: none;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            background-color: rgb(153, 228, 153);
+            border: none;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            margin-left: 30px;
+
+        }
+
+        input[type="email"] {
+            width: 500px;
+            margin-left: 63px;
+
+        }
+
+        input[type="password"] {
+            width: 500px;
+            margin-left: 38px;
+
+        }
+
+        input[type="number"] {
+            width: 500px;
+            margin-left: 50px;
+
+        }
+
+        input[type="date"] {
+            width: 500px;
+            margin-left: 20px;
+
+        }
+        #city{
+            margin-left: 75px;
+        }
+        #code{
+            margin-left: 40px;
+
+        }
+        #state{
+            margin-left: 68px;
+
+        }
+        #qual{
+            margin-left: 24px;
+            width: 500px;
+        }
+        
+        textarea{
+            width: 500px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        
+        #male{
+            margin-left: 51px;
+        }
+        #special{
+            display:inline-block;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        <h2>Registration form</h2>
+    </div>
+    <div id="two">
+        <form>
+            <ol>
+                <li>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </li>
+                <li>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="Email" placeholder="it should contain @,.">
+                </li>
+                <li>
+                    <label for="num">Mobile:</label>
+                    <input type="number" id="num" name="Mobile NUmber" pattern="[0-9]{10}"
+                        placeholder="only 10 digits are allowed">
+                </li>
+                <li>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </li>
+                <li>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="date of birth">
+                </li>
+                <li>
+                    <label for="address">Address:</label>
+                    <textarea></textarea>
+                </li>
+                <li>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </li>
+                <li>
+                    <label for="code">Area PIN:</label>
+                    <input type="number" id="code" name="code" pattern="[0-9]{6}">
+                </li>
+                <li>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+                </li>
+                <li>
+                    <label for="qual">Qualification:</label>
+                    <select id="qual" name="qualification">
+                        <option value="pg">PG</option>
+                        <option value="ug">UG</option>
+                        <option value="ph.d">Ph.D</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="special">Specialization:</label>
+                    <input type="checkbox" id="special" name="special" value="">
+                    <label for="special" id="special">Computer science</label>
+                    <input type="checkbox" id="special" name="special">
+                    <label for="special" id="special">Information Technology</label>
+                    <input type="checkbox" id="special" name="special">
+                    <label for="special" id="special">Computer Architecture</label>
+                    <input type="checkbox" id="special" name="special">
+                    <label for="special" id="special">Tele Communication</label>
+                <li>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="password">
+                </li>
+                <li>
+                    <input type="submit" value="Registered">
+                </li>
+            </ol>
+        </form>
+    </div>
+</body>
+
+</html>

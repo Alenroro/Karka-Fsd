@@ -1,0 +1,49 @@
+.box {
+  height: 1500px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.section {
+  width: 90%;
+  margin: auto;
+  background-color: lightblue;
+}
+.coffeeimg {
+  height: 30%;
+  background-image: url(./../images/front-view-still-life-hot-water-composition.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.imghead {
+  height: 50%;
+  text-align: center;
+  color: chocolate;
+}
+h1 {
+  font-size: 100px;
+}
+.sec1 {
+  background-color: lightgoldenrodyellow;
+}
+.sec2 {
+  background-color: lightskyblue;
+}
+
+.pics {
+  height: 250px;
+  width: 100%;
+}
+.pics1 {
+  height: 250px;
+}

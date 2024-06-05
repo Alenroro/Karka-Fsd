@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style></style>
+</head>
+
+<body>
+    <h2 id="text"></h2>
+    <h2 id="text1"></h2>
+    <h2 id="text2"></h2>
+    <h2 id="text3"></h2>
+    <h2 id="text4"></h2>
+
+    <script>
+        var number = 54;
+        var result = ((number % 2 == 0) ? "The Number is EVEN" : "The Number is ODD");
+        document.getElementById("text").innerHTML = result;
+
+        var a = 2;
+        var b = 4;
+        var c = 5;
+        var Lhs = (a + b) ** 2;
+        var Rhs = (a ** 2) + 2 * (a * b) + (b ** 2);
+        var output = ((Lhs == Rhs) ? "The Forumla is verified" : "The Formula is not correct")
+        document.getElementById("text1").innerHTML = output;
+
+        var Lhs1 = (a + b) ** 2;
+        var Rhs1 = (a ** 2) + 2 * (a * b) + (b ** 2);
+        var output1 = ((Lhs1 == Rhs1) ? "The Forumla is verified" : "The Formula is not correct")
+        document.getElementById("text2").innerHTML = output1;
+
+        var Lhs2 = (a + b - c) ** 2;
+        var Rhs2 = (a ** 2) + (b ** 2) + (c ** 2) + 2 * (a * b) - 2 * (b * c) - 2 * (c * a);
+        var output2 = ((Lhs2 == Rhs2) ? "The Forumla is verified" : "The Formula is not correct")
+        document.getElementById("text3").innerHTML = output2;
+
+        var Lhs3 = (a ** 2) - (b ** 2);
+        var Rhs3 = (a + b) * (a - b);
+        var output3 = ((Lhs3 == Rhs3) ? "The Forumla is verified" : "The Formula is not correct")
+        document.getElementById("text4").innerHTML = output3;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="text" id="text" />
+    <button onclick="change()">click</button>
+    <ol id="op"></ol>
+
+    <script>
+      function change() {
+        let ip = document.getElementById("text").value;
+        let list = document.createElement("li");
+        list.innerHTML = ip;
+        document.getElementById("op").appendChild(list);
+        document.getElementById("text").value="";
+      }
+    </script>
+  </body>
+</html>

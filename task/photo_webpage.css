@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+img {
+  height: 60px;
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.tag {
+  position: absolute;
+  top: 37px;
+  right: 130px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  margin-left: 20px;
+}
+section {
+  height: 1200px;
+  width: 100%;
+}
+
+.sec {
+  height: 400px;
+  width: 100%;
+}
+#Heading{
+    margin-left: 70px;
+}
+.one{
+    height: 85%;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    float: left;
+}
+
+.two{
+    height: 40%;
+    width: 29%;
+    float: left;
+    margin-top: 4%;
+    margin-left: 3%;
+}
+#img1{
+    background-image: url(./../images/waterfalls.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img2{
+    background-image: url(./../images/spider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img3{
+    background-image: url(./../images/dog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img4{
+    background-image: url(./../images/frog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img5{
+    background-image: url(./../images/image7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img6{
+    background-image: url(./../images/bird\ on\ wire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img7{
+    background-image: url(./../images/yak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.three{
+    height: 300px;
+    width: 184px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+#img8{
+    background-image: url(./../images/lion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img9{
+    background-image: url(./../images/fox.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img0{
+    background-image: url(./../images/elephant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img11{
+    background-image: url(./../images/kola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img12{
+    background-image: url(./../images/panda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    margin-top: 40px;
+}
+footer {
+  height: 100px;
+  width: 100%;
+}

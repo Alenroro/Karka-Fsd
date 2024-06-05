@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .one {
+            height: 50px;
+            width: 100%;
+            display: inline-block;
+            position: relative;
+        }
+
+        .one>li {
+            height: 60px;
+            width: 200px;
+            background-color: palegreen;
+            color: royalblue;
+            float: left;
+            font-size: large;
+            padding: 10px;
+            border: 1px solid white;
+        }
+
+        .one>li:hover {
+            background-color: palegoldenrod;
+        }
+
+        .two {
+            width: 200px;
+            position: absolute;
+            left: 400px;
+            top: 58px;
+            display: none;
+
+        }
+
+        .two>li {
+            width: 100%;
+            height: 100%;
+            background-color: palegreen;
+            color: royalblue;
+            border: 1px solid white;
+        }
+
+        .one>li:hover>.two {
+            display: block;
+        }
+
+        .two>li:hover {
+            background-color: paleturquoise;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="one">
+        <li>Home</li>
+        <li>About</li>
+        <li>Intresting Things
+            <ol class="two">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+                <li>four</li>
+            </ol>
+        </li>
+        <li>London</li>
+    </ol>
+</body>
+
+</html>

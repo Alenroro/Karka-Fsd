@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+    <style>
+        #box {
+            height: 300px;
+            width: 600px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-left: 400px;
+            background-color: black;
+        }
+
+        .time {
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            float: left;
+            margin: 50px 24px;
+            text-align: center;
+            background-color: white;
+            font-size: 70px;
+            box-shadow: 1px 1px 5px white, -1px 1px 5px white, 1px -1px 5px white, -1px 1px 5px white;
+        }
+
+        .btn {
+            height: 25px;
+            width: 100px;
+            float: left;
+            margin: 10px 50px;
+            font-size: large;
+            text-align: center;
+        }
+
+        #start {
+            background-color: lightgreen;
+        }
+
+        #stop {
+            background-color: lightcoral;
+        }
+
+        #reset {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="hour" class="time">00</div>
+        <div id="min" class="time">00</div>
+        <div id="sec" class="time">00</div>
+        <div id="msec" class="time">00</div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Stop</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+
+
+    <script>
+        let startBtn = document.getElementById('start');
+        let stopBtn = document.getElementById('stop');
+        let resetBtn = document.getElementById('reset');
+
+        let hour = 0;
+        let minute = 0;
+        let second = 0;
+        let msec = 0;
+
+        startBtn.addEventListener('click', function () {
+            timer = true;
+            stopWatch();
+        });
+
+        stopBtn.addEventListener('click', function () {
+            timer = false;
+        });
+
+        resetBtn.addEventListener('click', function () {
+            timer = false;
+            hour = 0;
+            minute = 0;
+            second = 0;
+            msec = 0;
+            document.getElementById('hour').innerHTML = "00";
+            document.getElementById('min').innerHTML = "00";
+            document.getElementById('sec').innerHTML = "00";
+            document.getElementById('msec').innerHTML = "00";
+        });
+
+        function stopWatch() {
+            if (timer) {
+                msec++;
+
+                if (msec == 100) {
+                    second++;
+                    msec = 0;
+                }
+
+                if (second == 60) {
+                    minute++;
+                    second = 0;
+                }
+
+                if (minute == 60) {
+                    hour++;
+                    minute = 0;
+                    second = 0;
+                }
+
+                let hourString = hour;
+                let minString = minute;
+                let secString = second;
+                let msecString = msec;
+
+                if (hour < 10) {
+                    hourString = "0" + hourString;
+                }
+
+                if (minute < 10) {
+                    minString = "0" + minString;
+                }
+
+                if (second < 10) {
+                    secString = "0" + secString;
+                }
+
+                if (msec < 10) {
+                    msecString = "0" + msecString;
+                }
+
+                document.getElementById('hour').innerHTML = hourString;
+                document.getElementById('min').innerHTML = minString;
+                document.getElementById('sec').innerHTML = secString;
+                document.getElementById('msec').innerHTML = msecString;
+                setTimeout(stopWatch, 10);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

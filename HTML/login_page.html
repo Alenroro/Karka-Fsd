@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px; 
+        }
+
+        body {
+            background-image: url(./../images/flower2.jpg);
+            background-repeat: no-repeat;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+        ol {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            position: absolute;
+            top: 250px;
+            left: 950px;
+            padding: 10px;
+            font-size: large;
+        }
+
+        li {
+            list-style-type: none;
+        }
+        label{
+            display: block;
+            width: 100px;
+        }
+
+        input[type=submit] {
+            height: 50px;
+            width: 275px;
+            position: absolute;
+            top: 225px;
+            left: 10px;
+            background-color: rgb(28, 128, 3);
+            border: none;
+            font-size: large;
+        }
+        input[type=email] {
+            width: 275px;
+            height: 35px;
+            margin-bottom: 30px;
+            background-color: rgb(194, 189, 189);
+            outline: none;
+            border: none;
+        }
+        input[type=password] {
+            height: 35px;
+            width: 275px;
+            margin-bottom: 30px;
+            background-color: rgb(194, 189, 189);
+            outline: none;
+            border: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <ol>
+            <li>
+                <h1>Login</h1>
+            </li>
+            <li>
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" placeholder="Enter Email">
+            </li>
+            <li>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="password" placeholder="Enter Password">
+            </li>
+            <li>
+                <input type="submit" value="Login">
+            </li>
+        </ol>
+    </form>
+</body>
+
+</html>

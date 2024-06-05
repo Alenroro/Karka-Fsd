@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> child pseudo class</title>
+        <style>
+            p :last-child{
+                color: violet;
+            }
+            p :first-child{
+                color: blue;
+            }
+            section :first-child{
+                color: pink;
+            }
+            section :last-child{
+                background-color: yellow;
+            }
+            p i {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>
+                <i>Ball</i>
+                <b>bat</b>
+                <i>car</i>
+                <i>man</i>
+                <u>titile</u>
+                <i>child</i>
+                <i>bike</i>
+            </p>
+        </div>
+        <br>
+        <section>
+            <p>parrot</p>
+            <p>kiwi</p>
+            <p>crow</p>
+            <p>eagle</p>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style></style>
+</head>
+
+<body>
+    <h2 id="text"></h2>
+
+    <script>
+        var mark = 25;
+        var total = (mark > 90 ? "Distinction" : mark <= 89 && mark >= 70 ? "First class" : 
+        mark <= 69 && mark >= 50 ? "Second class" : mark <= 49 && mark >= 35 ? "Third class" : "Try hard")
+        document.getElementById("text").innerHTML = total;
+
+    </script>
+</body>
+
+</html>

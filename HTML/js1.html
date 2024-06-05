@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            border: 1ps solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Personal Details</h1>
+        <ol>
+            <li id="one"></li>
+            <li id="two"></li>
+            <li id="three"></li>
+            <li id="four"></li>
+            <li id="five"></li>
+        </ol>
+    </div>
+    <script>
+        var bio = { name: "alen", age: 22, dob: "29 may 2001", mobile: 253835291, email: "alenroro321@gmail.com" };
+
+        document.getElementById('one').innerHTML = "Name: " + bio.name;
+        document.getElementById('two').innerHTML = "Age: " + bio.age;
+        document.getElementById('three').innerHTML = "D-O-B: " + bio.dob;
+        document.getElementById('four').innerHTML = "Mobile Number: " + bio.mobile;
+        document.getElementById('five').innerHTML = "E-mail: " + bio.email;
+    </script>
+</body>
+
+</html>

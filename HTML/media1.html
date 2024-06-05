@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querry</title>
+    <style>
+        div {
+            height: 650px;
+            width: 1200px;
+            background-color: darkblue;
+            margin: 10px auto;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                'head head head head head'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'nav sec sec sec art'
+                'foot foot foot foot foot';
+        }
+
+        header {
+            grid-area: head;
+            background-color: lightgreen;
+        }
+        nav {
+            grid-area: nav;
+            background-color: lightcoral;
+        }
+
+        article {
+            grid-area: art;
+            background-color: lightseagreen;
+        }
+
+        section {
+            grid-area: sec;
+            background-color: lightslategray;
+        }
+
+        footer {
+            grid-area: foot;
+            background-color: lightsalmon;
+        }
+
+
+        p {
+            text-align: center;
+            font-size: larger;
+        }
+
+        @media only screen and (max-width:400px) {
+            div {
+                width: 500px;
+                background-color: white;
+                grid-template-areas:
+                    'head head head nav nav'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'sec sec sec sec sec'
+                    'foot foot foot foot foot';
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <p>Header</p>
+        </header>
+        <nav>
+            <p>nav</p>
+        </nav>
+        <section>
+            <p>main content</p>
+        </section>
+        <article>
+            <p>Article</p>
+        </article>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>

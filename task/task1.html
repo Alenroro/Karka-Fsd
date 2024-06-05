@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .main {
+        height: 100%;
+        width: 100%;
+      }
+
+      .head {
+        height: 50px;
+        width: 100%;
+        background-color: lightgreen;
+        margin-bottom: 25px;
+      }
+      .section {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+      }
+      .sec {
+        height: 500px;
+        display: inline-block;
+        width: 25%;
+        background-color: lightcoral;
+      }
+
+      .sec1 {
+        height: 500px;
+        display: inline-block;
+        width: 49%;
+        background-color: palevioletred;
+      }
+
+      .sec2 {
+        height: 500px;
+        width: 25%;
+        display: inline-block;
+        background-color: lightseagreen;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .head {
+          height: 50px;
+          width: 100%;
+          background-color: lightgreen;
+          margin-bottom: 25px;
+        }
+        .section {
+          height: 100%;
+          width: 100%;
+          display: inline-block;
+        }
+        .sec {
+          height: 500px;
+          display: inline-block;
+          width: 25%;
+          background-color: lightcoral;
+        }
+
+        .sec1 {
+          height: 500px;
+          display: inline-block;
+          width: 49%;
+          background-color: palevioletred;
+        }
+
+        .sec2 {
+          height: 500px;
+          width: 25%;
+          display: inline-block;
+          background-color: lightseagreen;
+        }
+      }
+
+      @media only screen and (max-width: 775px) {
+
+        .head {
+        height: 50px;
+        width: 100%;
+        background-color: lightgreen;
+        margin-bottom: 25px;
+      }
+      .section {
+        height: 100%;
+        width: 100%;
+        display: inline-block;        
+      }
+      .sec {
+        height: 50px;
+        display: inline-block;
+        width: 100%;
+        background-color: lightcoral;
+      }
+
+      .sec1 {
+        height: 500px;
+        display: inline-block;
+        width: 49.5%;
+        background-color: palevioletred;
+      }
+
+      .sec2 {
+        height: 500px;
+        width: 49.5%;
+        display: inline-block;
+        background-color: lightseagreen;
+      }
+
+      }
+
+      @media only screen and (max-width: 575px) {
+      
+        .head {
+        height: 50px;
+        width: 100%;
+        background-color: lightgreen;
+        margin-bottom: 25px;
+      }
+      .section {
+        height: 100%;
+        width: 100%;
+        display: inline-block;        
+      }
+      .sec {
+        height: 50px;
+        display: inline-block;
+        width: 100%;
+        background-color: lightcoral;
+      }
+
+      .sec1 {
+        height: 500px;
+        display: inline-block;
+        width: 99.5%;
+        background-color: palevioletred;
+      }
+
+      .sec2 {
+        height: 500px;
+        width: 49.5%;
+        display: none;
+        background-color: lightseagreen;
+      }
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head"></div>
+      <div class="section">
+        <div class="sec"></div>
+        <div class="sec1"></div>
+        <div class="sec2"></div>
+      </div>
+    </div>
+  </body>
+</html>

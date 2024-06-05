@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reflection</title>
+    <style>
+        body {
+            background: linear-gradient(to top left, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green, red, yellow, green, red, yellow, green, red, yellow, green,
+                    red, yellow, green);
+        }
+
+        #box1 {
+            height: 200px;
+            width: 300px;
+            background-image: url(./../images/dog.jpg);
+            background-size: contain;
+            margin: 100px;
+            float: left;
+            -webkit-box-reflect: below 2px linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+        }
+
+        #box2 {
+            height: 200px;
+            width: 300px;
+            background-image: url(./../images/spider.jpg);
+            background-size: contain;
+            margin: 100px;
+            -webkit-box-reflect: below 2px linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+
+</html>

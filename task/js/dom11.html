@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Content Display</title>
+  </head>
+  <body>
+    <form>
+      <label for="countrySelect">Choose a country:</label>
+      <select id="countrySelect" onchange="update()">
+        <option value="default">Select a country</option>
+        <option value="usa">United States</option>
+        <option value="india">India</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </form>
+
+    <div id="countryInfo"></div>
+
+    <script>
+      var country = {
+        usa: {
+          name: "United States",
+          population: "331 million",
+          capital: "Washington, D.C.",
+        },
+        canada: {
+          name: "Canada",
+          population: "38 million",
+          capital: "Ottawa",
+        },
+        india: {
+          name: "India",
+          population: "67 million",
+          capital: "delhi",
+        },
+        uk: {
+          name: "United Kingdom",
+          population: "67 million",
+          capital: "London",
+        },
+      };
+
+      function update() {
+        var a = document.getElementById("countrySelect");
+        var b = a.value;
+        var c = document.getElementById("countryInfo");
+
+        if (b !== "default") {
+          var d = country[b];
+          c.innerHTML = `<p>Country: ${d.name}</p><p>Population: ${d.population}</p><p>Capital: ${d.capital}</p>`;
+        } else {
+          c.innerHTML = "<p>Please select a country</p>";
+        }
+      }
+    </script>
+  </body>
+</html>

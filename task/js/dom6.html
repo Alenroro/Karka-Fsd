@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="all" border="1"></table>
+
+    <input type="text" id="in" />
+    <button onclick="clk()">click</button>
+    <script>
+      let a = [];
+      function clk() {
+        let input = parseInt(document.getElementById("in").value);
+        if (input % 2 == 0) a.push(input);
+        document.getElementById("in").value = "";
+        console.log(a);
+      }
+    </script>
+  </body>
+</html>

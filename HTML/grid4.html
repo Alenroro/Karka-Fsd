@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>grid</title>
+            <style>
+            #box{
+            height: 500px;
+            background-color: darkblue;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-template-rows: 150px 150px 150px;
+            gap: 10px;
+            } 
+            #one{
+                background-color: lightpink;
+            }
+            #two{
+                background-color: lime;
+            }
+            #three{
+                background-color: darkolivegreen;
+            }
+            #four{
+                background-color: lightseagreen;
+            }
+            #five{
+                background-color: lightpink;
+            }
+            #six{
+                background-color: lightsalmon;
+            }
+            #seven{
+                background-color: lightseagreen;
+            }
+            #eight{
+            grid-column-start: 3;
+            grid-column-end: span 3;
+            background-color: lightcoral;
+            }
+            #nine{
+            grid-column-start: 1;
+            grid-column-end: span 5;
+            background-color: lightgreen;
+            }
+           
+            </style>
+        </head>
+        <body>
+            <div id="box">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
+                <div id="four"></div>
+                <div id="five"></div>
+                <div id="six"></div>
+                <div id="seven"></div>
+                <div id="eight"></div>
+                <div id="nine"></div>
+            </div>
+        </body>
+    </html>

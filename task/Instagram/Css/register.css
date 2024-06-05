@@ -1,0 +1,149 @@
+#profilepage {
+  height: 900px;
+  width: 100%;
+}
+#logo2 {
+  width: 15%;
+  height: 95%;
+  margin-left: 40%;
+}
+.sidebar {
+  height: 100%;
+  width: 10%;
+  float: left;
+}
+.sidebar ul {
+  width: 100%;
+  padding: 0%;
+  margin-top: 20px;
+}
+.sidebar ul li {
+  height: 50px;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+.mainpge {
+  height: 100%;
+  width: 89%;
+  float: left;
+}
+
+.button1 {
+  border-style: none;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.prfcnt {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dp {
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  border-radius: 100%;
+  background-image: url(./../images/IMG_20221012_015257_012.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dtls {
+  height: 250px;
+  width: 50%;
+  margin-left: 10%;
+}
+.dtl1 {
+  height: 60px;
+  width: 100%;
+  padding: 10px 20px;
+}
+h1 {
+  display: inline-block;
+}
+#follow {
+  margin-bottom: 3%;
+  margin-left: 60%;
+  margin-right: 2%;
+}
+
+.dtl2 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dtl2 span {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.dtl2 b {
+  margin-left: 10px;
+}
+.dtl3 {
+  height: 139px;
+  width: 100%;
+}
+
+.dtl3 p {
+  margin-left: 20px;
+}
+.hltfd {
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+.hlt {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  margin: 10px 10px;
+  background-image: url(./../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prfpst {
+  height: 475x;
+  width: 100%;
+}
+
+.psticn {
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.prficns {
+  height: 100%;
+  width: 50%;
+  margin-left: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prficns button {
+  margin-left: 20px;
+}
+
+.pst {
+  height: 400px;
+  width: 100%;
+  display: flex;
+}
+
+.posts {
+  height: 300px;
+  width: 33%;
+  margin-left: 2px;
+  background-image: url(./../images/Nature4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

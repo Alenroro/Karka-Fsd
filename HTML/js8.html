@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style></style>
+</head>
+
+<body>
+    <h2 id="text"></h2>
+    <h2 id="text1"></h2>
+    <h2 id="text2"></h2>
+    <h2 id="text3"></h2>
+    <h2 id="text4"></h2>
+    <h2 id="text5"></h2>
+    <h2 id="text6"></h2>
+    <h2 id="text7"></h2>
+    <h2 id="text8"></h2>
+    <h2 id="text9"></h2>
+    <h2 id="text10"></h2>
+
+    <script>
+        var a = "How are you ?";
+        var b = "Killed Rama a yesterday snake";
+        var c = "madam";
+        var d = "malayalam"
+        var change = a.split("");
+        document.getElementById("text").innerHTML = change;
+
+        var search = a.indexOf("r");
+        document.getElementById("text1").innerHTML = "Index value is " + search;
+
+        var uppercase = a.toUpperCase();
+        var lowercase = a.toLowerCase();
+        document.getElementById("text2").innerHTML = uppercase;
+        document.getElementById("text3").innerHTML = lowercase;
+
+        var long = a.length;
+        document.getElementById("text4").innerHTML = long;
+
+        var text = a.slice(4, 7)
+        document.getElementById("text5").innerHTML = text;
+
+        var code = a.indexOf("y");
+        document.getElementById("text6").innerHTML = code;
+
+        var long1 = a.length;
+        var long2 = b.length;
+        var result = ((a == b) ? "Same length" : "Different length");
+        document.getElementById("text7").innerHTML = result;
+
+        var pos = a.charCodeAt(10);
+        document.getElementById("text8").innerHTML = pos;
+
+
+
+    </script>
+</body>
+
+</html>

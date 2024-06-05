@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>json to object</title>
+            <style></style>
+        </head>
+        <body>
+            <div id="box"></div>
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <script>
+               var a = document.getElementById("box1").innerHTML=localStorage.getItem("person");
+               var b=JSON.parse(a);
+               document.getElementById("box").innerHTML=b.firstname;
+               document.getElementById("box1").innerHTML=b.lastname;
+               document.getElementById("box2").innerHTML=b.age;
+            </script>
+        </body>
+    </html>

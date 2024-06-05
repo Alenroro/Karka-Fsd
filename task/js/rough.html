@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="addRow()">Add Row</button>
+    <table id="myTable" border="1"></table>
+
+    <script>
+      function addRow() {
+        let table = document.getElementById("myTable");
+        let row = table.insertRow(table.rows.length);
+
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+
+        cell1.innerHTML = "Cell 1 Content";
+        cell2.innerHTML = "Cell 2 Content";
+      }
+    </script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="addRow()">Add Row</button>
+    <table id="myTable" border="1">
+      <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+      </tr>
+    </table>
+
+    <script>
+      function addRow() {
+        let table = document.getElementById("myTable");
+        let row = table.insertRow(table.rows.length);
+        
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+
+        // You can customize the content of each cell as needed
+        cell1.innerHTML = "Cell 1 Content";
+        cell2.innerHTML = "Cell 2 Content";
+      }
+    </script>
+  </body>
+</html>

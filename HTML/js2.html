@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            border: 1ps solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>People</h1>
+        <ol>
+            <li id="one"></li>
+            <li id="two"></li>
+            <li id="three"></li>
+            <li id="four"></li>
+            <li id="five"></li>
+        </ol>
+    </div>
+    <script>
+        var people = ["alen","arun","arul","akash","praveen"];
+
+        document.getElementById('one').innerHTML = people[0];
+        document.getElementById('two').innerHTML = people[1];
+        document.getElementById('three').innerHTML = people[2];
+        document.getElementById('four').innerHTML = people[3];
+        document.getElementById('five').innerHTML = people[4];
+    </script>
+</body>
+
+</html>

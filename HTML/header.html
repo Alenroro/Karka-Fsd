@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #box {
+            height: 600px;
+            width: 1000px;
+            border: 1px solid black;
+        }
+
+        header {
+            height: 100px;
+            width: 100%;
+            background-color: palevioletred;
+            border: 1px solid black;
+        }
+
+        nav {
+            height: 50px;
+            width: 100%;
+            background-color: palegoldenrod;
+            border: 1px solid black;
+        }
+
+        #main {
+            height: 400px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        #one{
+            height: 100%;
+            width: 75%;
+            background-color: paleturquoise;
+            border: 1px solid black;
+            float: left;
+        }
+
+        section {
+            height: 50%;
+            width: 100%;
+            background-color: paleturquoise;
+            border: 1px solid black;
+            float: left;
+        }
+
+        article {
+            height: 50%;
+            width: 100%;
+            background-color: palegreen;
+            border: 1px solid black;
+            float: left;
+        }
+        #two{
+            height: 100%;
+            width: 25%;
+            border: 1px solid black;
+            float: right;
+        }
+        aside {
+            height: 100%;
+            width: 100%;
+            background-color: darkcyan;
+            border: 1px solid black;
+            text-align: center;
+            margin: left 200px; ;
+        }
+
+        footer {
+            height: 50px;
+            width: 100%;
+            background-color: darkmagenta;
+            border: 1px solid black;
+        }
+        p{
+            text-align: center;
+            background-color: white;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <header><p style="position: relative; left: 450px;">HEADER</p></header>
+        <nav><p style="position: relative; left: 500px;">NAV</p></nav>
+        <div id="main">
+            <div id="one">
+                <section><p style="position: relative; left: 300px;">SECTION</p></section>
+                <article><p style="position: relative; left: 300px;">ARTICLE</p></article>
+            </div>
+            <div id="two">
+                <aside><p style="position: relative; left: 100px; top: 150px;">ASIDE</p></aside>
+            </div>
+        </div>
+        <footer><p style="position: relative; left: 300px;">FOOTER</p></footer>
+    </div>
+</body>
+
+</html>

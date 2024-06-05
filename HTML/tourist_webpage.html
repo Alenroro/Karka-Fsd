@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <style>
+        * {
+
+            list-style-type: none;
+        }
+
+        #main {
+            list-style-type: none;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+
+        body {
+            background-image: url(./../images/waterfalls.jpg);
+            background-size: cover;
+        }
+
+        select {
+            height: 50px;
+            width: 300px;
+            border: none;
+            margin-left: 25px;
+            outline: none;
+
+        }
+
+        input[type="submit"] {
+            height: 50px;
+            width: 300px;
+            border: none;
+            margin-left: 25px;
+            background-color: rgb(37, 37, 138);
+            color: white;
+            font-size: large;
+        }
+
+        input[type="date"] {
+            height: 50px;
+            width: 300px;
+            border: none;
+            margin-left: 25px;
+            outline: none;
+        }
+
+        #top {
+            height: 60px;
+            width: auto;
+            color: white;
+            float: left;
+            font-size: large;
+            padding: 15px;
+            position: relative;
+            
+        }
+
+        .tag {
+            list-style-type: none;
+            height: 50px;
+            width: 100%;
+            display: inline;
+        }
+
+        a {
+            color: white;
+            text-decoration-line: none;
+            font-size: large;
+            padding-left: 100px;
+        }
+
+        input[type="image"] {
+            height: 100px;
+            width: 100px;
+            margin-right: 20px ;
+
+        }
+        #logo1{
+            font-size: 30px;
+            color: blue;
+            display: block;
+            position: absolute;
+            top: 45%;
+            left:97%;
+        }
+        #logo2{
+            font-size: 30px;
+            color: darkblue;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left:97%;
+        }
+        #logo3{
+            font-size: 30px;
+            color: white;
+            display: block;
+            position: absolute;
+            top: 55%;
+            left:97%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <ol id="top">
+            <li class="tag"><input type="image" src="./../images/pngfind.com-mountain-silhouette-png-177581.png"
+                    alt="company logo">Mountain company</li>
+            <li class="tag"><a href="tourist_webpage.html">Home</a></li>
+            <li class="tag"><a href="intrest.html"> Tours</a></li>
+            <li class="tag"><a href="about.html">About</a></li>
+            <li class="tag"><a href="boring.html">Advantages</a></li>
+            <li class="tag"><a href="boring.html">Blog</a></li>
+            <li class="tag"><a href="contact.html">Contact</a></li>
+        </ol>
+        <ol id="main">
+            <li>
+                <input type="date" id="date" name="date">
+                <select id="price" name="price">
+                    <option value="your price range">your price range</option>
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+                <input type="submit" value="SEARCH TOURS">
+            </li>
+        </ol>
+    </form>
+    <i class="fa fa-facebook-square" id="logo1"></i>
+    <i class="fa fa-linkedin" id="logo2"></i>
+    <i class="fa fa-google" id="logo3"></i>
+</body>
+
+</html>

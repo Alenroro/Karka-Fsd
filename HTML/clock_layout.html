@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clock</title>
+        <style>
+            #back{
+                height: 600px;
+                width: 1000px; 
+                background-image: url(./wall.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }   
+            #clock{
+                height: 250px;
+                width: 250px;
+                border-radius: 50%;
+                background-color: darkblue;
+                border: 1px solid black;
+                position: relative;
+                top: 50px;
+                left: 500px;
+            }
+            .div{
+                height: 10%;
+                width: 10%;
+                border-radius: 50%;
+                color: yellow;
+                text-align: center;
+            }
+            #twelve{
+                position: absolute;
+                left: 113px;
+                top: 0px;
+            }
+            #eleven{
+                position: absolute;
+                left: 55px;
+                top: 20px;
+            }
+            #ten{
+                position: absolute;
+                left: 13px;
+                top: 60px;
+            }
+            #nine{
+                position: absolute;
+                left: 0px;
+                top: 115px;
+            }
+            #eight{
+                position: absolute;
+                left: 13px;
+                top: 170px;
+            }
+            #seven{
+                position: absolute;
+                left: 60px;
+                top: 220px;
+            }
+            #six{
+                position: absolute;
+                left: 113px;
+                top: 230px;
+            }
+            #five{
+                position: absolute;
+                left: 170px;
+                top: 220px;
+            }
+            #four{
+                position: absolute;
+                left: 215px;
+                top: 170px;
+            }
+            #three{
+                position: absolute;
+                left: 230px;
+                top: 115px;
+            }
+            #two{
+                position: absolute;
+                left: 215px;
+                top: 60px;
+            }
+            #one{
+                position: absolute;
+                left: 170px;
+                top: 20px;
+            }
+            #div1{
+                width: 3px;
+                height: 80px;
+                background-color: yellow;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+            #div2{
+                width: 50px;
+                height: 3px;
+                background-color: yellow;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="back">
+            <div id="clock">
+                <div class="div" id="one"> 1</div>
+                <div class="div" id="two">  2</div>
+                <div class="div" id="three">  3</div>
+                <div class="div" id="four"> 4</div>
+                <div class="div" id="five"> 5</div>
+                <div class="div" id="six"> 6</div>
+                <div class="div" id="seven"> 7</div>
+                <div class="div" id="eight"> 8</div>
+                <div class="div" id="nine"> 9</div>
+                <div class="div" id="ten"> 10</div>
+                <div class="div" id="eleven">11</div>
+                <div class="div" id="twelve"> 12</div>
+                <div id="div1"></div>
+                <div id="div2"></div>
+            </div>
+        </div>
+    </body>
+</html>

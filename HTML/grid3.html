@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #box {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-template-rows: 150px 250px 150px;
+            gap: 15px;
+        }
+
+        #image {
+            grid-row-start: 2;
+            grid-column-end: span 5;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div>
+            <img src="./../images/cat.jpg" alt="cat">
+
+        </div>
+        <div>
+            <img src="./../images/dog.jpg" alt="dog">
+
+        </div>
+        <div>
+            <img src="./../images/frog.jpg" alt="frog">
+
+        </div>
+        <div>
+            <img src="./../images/kola.jpg" alt="kola">
+
+        </div>
+        <div>
+            <img src="./../images/flower2.jpg" alt="kola">
+
+        </div>
+        <div>
+            <img src="./../images/bird on wire.jpg" alt="waterfalls">
+        </div>
+
+        <div id="image">
+            <img src="./../images/peacock.jpg" alt="peacock">
+        </div>
+
+        <div>
+            <img src="./../images/spider.jpg" alt="spider">
+        </div>
+        <div>
+            <img src="./../images/yak.jpg" alt="yak">
+        </div>
+        <div>
+            <img src="./../images/deer.jpg" alt="deer">
+        </div>
+        <div>
+            <img src="./../images/fox.jpg" alt="fox">
+        </div>
+    </div>
+</body>
+
+</html>

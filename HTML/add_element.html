@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style></style>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="first">First child</p>
+        <p id="second">Second child</p>
+    </div>
+    <button onclick="add()">Add</button>
+
+    <script>
+        function add() {
+            var parentEle=document.getElementById("parent");
+            var createPTag=document.createElement("p");
+            createPTag.innerHTML="this is second child"
+            parentEle.append(createPTag);
+
+        }
+    </script>
+</body>
+
+</html>

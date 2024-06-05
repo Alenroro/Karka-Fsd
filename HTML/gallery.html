@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reflection</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin: 15px;
+        }
+
+        .img {
+            height: 80%;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 10px;
+            font-size: large;
+        }
+
+        .box:hover {
+            box-shadow: 1px 1px 2px grey, -1px -1px 2px grey, 2px 2px 2px grey, -2px -2px 2px grey;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media only screen and (max-width:400px) {
+            .box {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width:400px) and (max-width:700px) {
+            .box {
+                width: 40%;
+                float: left;
+            }
+        }
+        @media only screen and (min-width:700px) and (max-width:1000px) {
+            .box {
+                width: 28%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gallery</h1>
+    <div class="box">
+        <a href=""></a>
+        <img src="./../images/bird on wire.jpg" alt="bird" class="img">
+        <p>Bird</p>
+    </div>
+    <div class="box">
+        <img src="./../images/cat.jpg" alt="Cat" class="img">
+        <p>Cat</p>
+    </div>
+    <div class="box">
+        <img src="./../images/deer.jpg" alt="Deer" class="img">
+        <p>Deer</p>
+    </div>
+    <div class="box">
+        <img src="./../images/dog.jpg" alt="Dog" class="img">
+        <p>Dog</p>
+    </div>
+    <div class="box">
+        <img src="./../images/elephant.jpg" alt="elephant" class="img">
+        <p>Elephant</p>
+    </div>
+    <div class="box">
+        <img src="./../images/fox.jpg" alt="Fox" class="img">
+        <p>Fox</p>
+    </div>
+    <div class="box">
+        <img src="./../images/frog.jpg" alt="Frog" class="img">
+        <p>Frog</p>
+    </div>
+    <div class="box">
+        <img src="./../images/kola.jpg" alt="Kola" class="img">
+        <p>Kola</p>
+    </div>
+    <div class="box">
+        <img src="./../images/lion.jpg" alt="lion" class="img">
+        <p>Lion</p>
+    </div>
+    <div class="box">
+        <img src="./../images/panda.jpg" alt="Panda" class="img">
+        <p>Panda</p>
+    </div>
+    <div class="box">
+        <img src="./../images/peacock.jpg" alt="peacock" class="img">
+        <p>Peacock</p>
+    </div>
+    <div class="box">
+        <img src="./../images/spider.jpg" alt="Spider" class="img">
+        <p>Spider</p>
+    </div>
+</body>
+
+</html>

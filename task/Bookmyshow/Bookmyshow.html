@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/137efd360a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./bookmyshow.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header class="header row m-0">
+        <div class="logo col-lg-2">
+          <img src="./images/pngwing.com.png" alt="logo" />
+        </div>
+        <div class="search col-lg-6">
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="Location col-lg-2">
+          <a
+            class="btn btn-light dropdown-toggle text-dark border border-light"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Location
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Nagercoil</a></li>
+            <li><a class="dropdown-item" href="#">Marthandam</a></li>
+            <li><a class="dropdown-item" href="#">Chennai</a></li>
+          </ul>
+        </div>
+        <div class="signin col-lg-1">
+          <button type="button">sign in</button>
+        </div>
+        <div class="icns col-lg-1">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+
+      <section class="section row m-0">
+        <div class="container1 col-lg-12 row m-0">
+          <div class="link1 col-lg-4 row m-0">
+            <a href="" class="movies col-lg-2">Movies</a>
+            <a href="" class="stream col-lg-2">Stream</a>
+            <a href="" class="plays col-lg-2">Plays</a>
+            <a href="" class="events col-lg-2">Events</a>
+            <a href="" class="sports col-lg-2">Sports</a>
+            <a href="" class="activities col-lg-2">Activities</a>
+          </div>
+          <div class="gap col-lg-4 m-0"></div>
+          <div class="link2 col-lg-4 row m-0">
+            <a href="" class="listyourshow col-lg-3 m-0">ListYourShow</a>
+            <a href="" class="corporates col-lg-3 m-0">Corporates</a>
+            <a href="" class="offers col-lg-3 m-0">Offers</a>
+            <a href="" class="Giftcards col-lg-3 m-0">Gift Cards</a>
+          </div>
+        </div>
+
+        <div class="container2 row m-0">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/1706382336630_web.avif"
+                  class="d-block w-100"
+                  alt="img"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/1707383766399_premiereweb.avif"
+                  class="d-block w-100"
+                  alt="img"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/1707384122087_aquamanweb.avif"
+                  class="d-block w-100"
+                  alt="img"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/1706507388658_web.avif"
+                  class="d-block w-100"
+                  alt="img"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container3 row m-0 mt-5">
+          <h4 class="h4 col-lg-3">Recommended Movies</h4>
+          <div class="gap col-lg-8"></div>
+          <a href="seeall" class="seeall col-lg-1">See All</a>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00304730-anyygmypht-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00311673-bcmpxxhayj-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00359069-dmajctmmjj-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00361924-fdsxegwume-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00372554-tqaajcalyp-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00376031-blcwrdjbah-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00383266-aclkwmjrpj-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00384125-yybkfmlgqc-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00384166-gzjdelrnhe-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/movie/et00385185-nshxaznahe-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="container4 row m-0 mt-5">
+          <div class="banner col-lg-12">
+            <img
+              src="./images/stream-leadin-web-collection-202210241242.avif"
+              alt="banner"
+            />
+          </div>
+        </div>
+
+        <div class="container5 row m-0 mt-5">
+          <h4 class="h4 col-lg-3">The Best Of Live Events</h4>
+          <div class="gap col-lg-8"></div>
+          <a href="seeall" class="seeall col-lg-1">See All</a>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/live/comedy-shows-collection-202211140440.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/live/interactive-games-collection-202211140440.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/live/kids-zone-collection-202211140440.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/live/music-shows-collection-202211140440.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/live/theatre-shows-collection-202211140440.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/live/workshop-and-more-web-collection-202211140440.avif"
+                  alt="Movies"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="container6 row m-0 mt-5">
+          <div class="premierbanner col-lg-12">
+            <img
+              src="./images/premiere-banner-web-collection-202208191200.avif"
+              alt="premier banner"
+            />
+          </div>
+          <div class="prmiercntnt col-lg-12 row m-0">
+            <h4 class="h4 col-lg-3">Premiere</h4>
+            <div class="gap col-lg-8"></div>
+            <a href="seeall" class="seeall col-lg-1">See All</a>
+            <div class="swiper mySwiper1 col-lg-12">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00311948-nlhdjrhtpq-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00321161-krmmqjmtht-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00357652-hdlbzjxqcu-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00365212-dbkgfnzmvp-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00375824-yaczhztnby-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00385444-ucarwyltwy-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00385688-qxmsdushpd-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00385703-yxcqkkmmff-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/movie/et00384166-gzjdelrnhe-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/premiere/et00375824-yaczhztnby-portrait.avif"
+                    alt="Movies"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container7 row m-0 mt-5">
+          <h4 class="h4 col-lg-3">Your Music Studio</h4>
+          <div class="gap col-lg-8"></div>
+          <a href="seeall" class="seeall col-lg-1">See All</a>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00371920-ugwkrawdks-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00373677-uhsckkjnlq-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00382582-egynrhyvvx-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00382853-fypkmkqewu-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00383840-wmbhlfxjem-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00384063-mrdvzkfdlj-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00384458-admbzxqcyj-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00384460-xdtssaxuxj-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00385291-usdhyrdjpx-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/music/et00385784-uczgrnvkce-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="container8 row m-0 mt-5">
+          <h4 class="h4 col-lg-3">Top Games and Sports</h4>
+          <div class="gap col-lg-8"></div>
+          <a href="seeall" class="seeall col-lg-1">See All</a>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00328084-dkjlnxafmb-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00370015-mktpmlclmt-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00384501-butelzpscs-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00384952-lhqeyehasy-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00384964-bufkzmxvln-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00384967-xefatvnwnw-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00385890-pfffwngfjr-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00386062-mhqlryyhyz-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00386072-yqtnhkcdhg-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/sports/et00386327-dwdtxyjgja-portrait.avif"
+                  alt="Movies"
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

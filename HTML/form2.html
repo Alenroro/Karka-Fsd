@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            table{
+                margin-left: 200px;
+            }
+            #box{
+                height: 400px;
+                width: 800px;
+            }
+            #top
+            {
+                height: 50px;
+                width: 100%;
+                background-color: darkblue;
+                color: yellow;
+            }
+            #mid{
+                height: 300px;
+                width: 100%;
+                background-color: darkslategrey;
+                color: yellow;
+            }
+            #bott{
+                height: 50px;
+                width: 100%;
+                background-color: darkblue;
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div id="top">
+                <h1>Sign Up</h1>
+            </div>
+            <form>
+                <b>
+                    <div id="mid">
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">First Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lname">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="sname">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="sname" name="sname" placeholder="Enter Screen Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="dob">Date of Birth:</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="dob" name="dateofbirth">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Gender:</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="cnt"> Country:</label>
+                                </td>
+                                <td>
+                                    <select id="cnt" name="country" style="width: 180px;">
+                                        <option value="India">India</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Africa">Africa</option>
+                                        <option value="Europe">Europe</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" name="email" placeholder="Enter Email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="num">Phone Number:</label>
+                                </td>
+                                <td>
+                                    <input type="tel" id="num" name="num" pattern="[0-9]{10}" placeholder="Enter Phone Number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pwd">Password:</label>
+                                </td>
+                                <td>
+                                    <input type="password" id="pwd" name="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pwd">Confirm Password:</label>
+                                </td>
+                                <td>
+                                    <input type="password" id="pwd" name="pwd">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="checkbox" id="agree" name="agree" value="I agree to the Terms of use">
+                                    <label for="agree"> I agree to the Terms of use</label>
+                                </td>
+                            </tr>
+                        </table>
+                         </div>
+                         <div id="bott">
+                             <input type="submit" style="color: white; background-color: green; border: none; margin-left: 80%;">
+                             <input type="reset" value="cancel" style="background-color: red; color: white; border: none;">
+                    </div>
+                 </b>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style></style>
+</head>
+
+<body>
+    <h2 id="text"></h2>
+    <h2 id="text1"></h2>
+    <h2 id="text2"></h2>
+    <h2 id="text3"></h2>
+    <h2 id="text4"></h2>
+    <h2 id="text5"></h2>
+
+    <script>
+        var a = [1, 2, 3, 4];
+        var b = ["Your"," Name"];
+        var fruits = ["Apple", "Orange", "Lemon","Mango"];
+        var fruits1 = ["Apple", "Orange", "Lemon","Mango"];
+        var fruits2 = ["Apple", "Orange", "Lemon","Mango"];
+        var fruits3 = ["Apple", "Orange", "Lemon","Mango"];
+
+        reverse = a.reverse();
+        b.reverse();
+        fruits.pop();
+        fruits1.shift();
+        fruits2.push("Cherry");
+        fruits3.unshift("Banana");
+
+        document.getElementById("text").innerHTML = a;
+        document.getElementById("text1").innerHTML = b;
+        document.getElementById("text2").innerHTML = fruits;
+        document.getElementById("text3").innerHTML = fruits1;
+        document.getElementById("text5").innerHTML = fruits2;
+        document.getElementById("text4").innerHTML = fruits3;
+    </script>
+</body>
+
+</html>

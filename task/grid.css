@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: lightpink;
+  display: inline-block;
+}
+
+.section {
+  height: 600px;
+  width: 100%;
+  display: inline-block;
+}
+.section1 {
+  height: 100%;
+  width: 49.5%;
+  background-color: tomato;
+  display: inline-block;
+}
+.section2 {
+  height: 100%;
+  width: 49.5%;
+  display: inline-block;
+}
+
+.sec1 {
+  height: 49.5%;
+  width: 100%;
+  display: inline-block;
+  background-color: lightseagreen;
+}
+
+.sec2 {
+  height: 49.5%;
+  width: 100%;
+  background-color: lightsteelblue;
+  display: inline-block;
+}
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+@media only screen and (max-width: 992px) {
+  .section {
+    height: 600px;
+    width: 100%;
+    display: inline-block;
+  }
+  .section1 {
+    height: 100%;
+    width: 49.5%;
+    background-color: tomato;
+    display: inline-block;
+  }
+  .section2 {
+    height: 100%;
+    width: 49.5%;
+    display: inline-block;
+  }
+
+  .sec1 {
+    height: 49.5%;
+    width: 100%;
+    display: inline-block;
+    background-color: lightseagreen;
+  }
+
+  .sec2 {
+    height: 49.5%;
+    width: 100%;
+    background-color: lightsteelblue;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .section {
+    height: 600px;
+    width: 100%;
+    display: inline-block;
+  }
+  .section1 {
+    height: 69.5%;
+    width: 100%;
+    background-color: tomato;
+    display: inline-block;
+  }
+  .section2 {
+    height: 39.5%;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .sec1 {
+    height: 100%;
+    width: 49.5%;
+    display: inline-block;
+    background-color: lightseagreen;
+  }
+
+  .sec2 {
+    height: 100%;
+    width: 49.5%;
+    background-color: lightsteelblue;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+    .section{
+        height: 600px;
+        width: 100%;
+        display: inline-block;
+    
+    }
+    .section1{
+        height: 100%;
+        width: 100%;
+        background-color: tomato;
+        display: inline-block;
+    }
+    .section2{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .sec1{
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        background-color: lightseagreen;
+    }
+    
+    .sec2{
+        height: 49.5%;
+        width:100%;
+        background-color: lightsteelblue;
+        display: none;
+    }
+    .footer {
+        height: 100px;
+        width: 100%;
+        background-color: lightskyblue;
+        display: none;
+      }
+}

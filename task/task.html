@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 300px;
+            width: 500px;
+            background-color: tomato;
+            margin: 200px 200px;
+            border-top-right-radius:20% ;
+            border-bottom-left-radius:20% ;
+            position: relative;
+            overflow: hidden;
+            animation: clrcng 8s infinite reverse;
+
+        }
+
+        @keyframes clrcng {
+            0%{
+                background-color: teal;
+            }
+            25%{
+                background-color: gold;
+            }
+            50%{
+                background-color: lightgreen;
+            }
+            75%{
+                background-color: burlywood;
+            }
+            100%{
+                background-color: limegreen;
+            }
+        }
+        .one{
+            height: 80px;
+            width: 80px;
+            border-radius: 45px;
+            background-color: white;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+
+        }
+        .two{
+            height: 80px;
+            width: 80px;
+            border-radius: 45px;
+            background-color: white;
+            position: absolute;
+            top: 250px;
+            right: -25px;
+
+        }
+        .three{
+            height: 80px;
+            width: 80px;
+            border-radius: 45px;
+            background-color: white;
+            position: absolute;
+            top: 255px;
+            right: 200px;
+
+        }
+        .four{
+            height: 50px;
+            width: 50px;
+            transform: rotate(135deg);
+            background-color: white;
+            position: absolute;
+            top: 115px;
+            left: -25px;
+           
+        }
+        .five{
+            height: 50px;
+            width: 50px;
+            transform: rotate(135deg);
+            background-color: white;
+            position: absolute;
+            top: 115px;
+            right: -25px; 
+        }
+        .six{
+            height: 50px;
+            width: 50px;
+            transform: rotate(135deg);
+            background-color: white;
+            position: absolute;
+            top: -25px;
+            right: 220px
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+    </div>
+</body>
+</html>

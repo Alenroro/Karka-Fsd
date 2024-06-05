@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Storage</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <button onclick="storeInput()">Push</button>
+    <p id="data"></p>
+
+    <script>
+      var array = [];
+      function storeInput() {
+        var a = document.getElementById("input").value;
+        array.push(a);
+        document.getElementById("input").value = "";
+        console.log(array)
+      }
+    </script>
+  </body>
+</html>

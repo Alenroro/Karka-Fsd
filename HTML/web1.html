@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        #box{
+            height: 750px;
+            width: 1499px;
+        }
+        nav{
+            height: 100%;
+            width: 25%;
+            float: left;
+        }
+        .link{
+            height: 50px;
+            width: 100%;
+            border: 1px solid white;
+            color: royalblue;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .link:hover{
+            background-color: royalblue;
+            color: white;
+        }
+
+        .link:selected{
+            background-color: royalblue;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        input[type=text]{
+            width: 95%;
+            margin: 5px;
+        }
+
+        input[type=submit]{
+            background-color: royalblue;
+            color: white;
+            margin: 5px;
+
+        }
+        #content{
+            height: 100%;
+            border: 1px solid black;
+            width: 74.5%;
+            float: right;         
+        }
+        header{
+            height: 30px;
+            width: 100%;
+            background-color: rgb(223, 165, 165);
+            color: red;
+            padding-top: 5px;
+        }
+        section{
+            height: 670px;
+            width: 100%;
+        }
+        #div{
+            height: 200px;
+            width: 100%;
+        }
+        h1{
+            padding-top: 20px;
+        }
+        table{
+            height: 150px;
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-collapse: collapse;
+
+        }
+        th,td{
+            height: 50px;
+            width: 50%;
+            border: 1px solid lightgrey;
+        }
+        #img{
+            height: 340px;
+            width: 100%;
+
+        }
+        #one{
+            height: 100%;
+            width: 370px;
+            float: left;
+            border: 1px solid grey;
+
+        }
+        #two{
+            height: 100%;
+            width: 374px;
+            border: 1px solid grey;
+            float: left;
+        }
+        #three{
+            height: 100%;
+            width: 370px;
+            border: 1px solid grey;
+            float: right;
+        }
+        img{
+            height: 60%;
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <nav>
+            <h2>Some Favorites</h2>
+            <p class="link"><a href="./home.html">Celery Root</a></p>
+            <p class="link"><a href="./about.html">Spaghetti Squash</a></p>
+            <p class="link"><a href="./intrest.html">Killer Mushroom</a></p>
+            <form>
+                <input type="text" id="search" value="search">
+                <input type="submit" value="search results">
+            </form>
+        </nav>
+       <div id="content">
+            <header>
+                <p><b>Uh-oh!</b> Have you had your daily dose of veggies today??</p>
+            </header>
+            <section> 
+                <div id="div">
+                    <h1>Wild & Wacky Vegetable</h1>
+                <p>
+                    The Beetroot is the most intense of vegetables. The radish,admittedly, is more feverish, but the
+                    fire of the radish is a coldfire, the fire od discontent not of passion. The Tomatoes are lusty
+                    enough, yet there runs through tomatoes an undercurrent of frivolity. Beetroot are deadly serious.
+                </p>
+                </div>
+                <h3>Some disease</h3>
+                <table>
+                    <tr>
+                        <th>Veggie</th>
+                        <th>Disease</th>
+                    </tr>
+                    <tr>
+                        <td>Beetroot</td>
+                        <td>Beeturia</td>
+                    </tr>
+                    <tr>
+                        <td>Carrots</td>
+                        <td>Carotenosis</td>
+                    </tr>
+                </table>
+                <div id="img">
+                    <div id="one">
+                        <img src="./../images/carotts.jpeg" alt="carrot">
+                        <h4>Carrots</h4>
+                        <p>Not stick, can motivate</p>
+                    </div>
+                    <div id="two">
+                        <img src="./../images/Beetroot.jpeg" alt=" Beetroot">
+                        <h4>Beetroot</h4>
+                        <p>Careful not to get your hands dirty</p>
+                    </div>
+                    <div id="three">
+                        <img src="./../images/asparagus.jpeg" alt="asparagus">
+                        <h4>Asparagus</h4>
+                        <p>Spears, Spears, Spears</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        #box {
+            height: 300px;
+            width: 400px;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+            position: relative;
+            left: 200px;
+            top: 200px;
+        }
+
+        #num {
+            height: 150px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: aliceblue;
+            position: absolute;
+            top: 75px;
+            left: 90px;
+
+        }
+
+        #number {
+            text-align: center;
+        }
+
+        #add {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            font-size: 45px;
+            background-color: palegreen;
+            border-radius: 100px;
+            position: absolute;
+            left: 585px;
+            top: 333px;
+
+        }
+
+        #sub {
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            font-size: 45px;
+            border: 1px solid black;
+            background-color: palegreen;
+            position: absolute;
+            left: 185px;
+            top: 333px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="num">
+            <h2 id="number">0</h2>
+        </div>
+    </div>
+    <button id="add"><b>+</b></button>
+    <button id="sub"><b>-</b></button>
+
+
+    <script>
+        var button1 = document.getElementById("add");
+        button1.addEventListener('click', increment);
+
+        var button2 = document.getElementById("sub");
+        button2.addEventListener('click', decrement);
+
+        function increment() {
+            var element = document.getElementById("number");
+            var value1 = element.innerHTML;
+            value1++;
+            document.getElementById("number").innerHTML = value1;
+
+        }
+        function decrement() {
+            var element = document.getElementById("number");
+            var value2 = element.innerHTML;
+            value2--;
+            document.getElementById("number").innerHTML = value2;
+
+        }
+    </script>
+</body>
+
+</html>

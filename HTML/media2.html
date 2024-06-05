@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            padding: 10px;
+            height: 700px;
+            width: 1200px;
+            background-color: green;
+            position: absolute;
+            left: 100px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                'head head head head head head head'
+                'nav nav nav nav nav nav nav'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'art art art art aside aside aside'
+                'sec sec sec sec aside aside aside'
+                'sec sec sec sec aside aside aside'
+                'sec sec sec sec aside aside aside'
+                'foot foot foot foot foot foot foot'
+        }
+
+        header {
+            grid-area: head;
+            background-color: palegreen;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: palegreen;
+        }
+
+        article {
+            grid-area: art;
+            background-color: palegreen;
+        }
+
+        .head1 {
+            height: 50px;
+            width: 550px;
+            background-color: white;
+            position: relative;
+            top: 80px;
+            left: 105px;
+        }
+
+        .sec1 {
+            height: 150px;
+            width: 550px;
+            background-color: white;
+            position: relative;
+            top: 120px;
+            left: 105px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: green;
+        }
+
+        .aside1 {
+            height: 170px;
+            width: 150px;
+            background-color: palegreen;
+            position: relative;
+            top: 25px;
+            left: 10px;
+        }
+
+        .aside2 {
+            height: 170px;
+            width: 150px;
+            background-color: palegreen;
+            position: relative;
+            top: -145px;
+            left: 190px;
+
+        }
+
+        .aside3 {
+            height: 55%;
+            width: 97%;
+            background-color: palegreen;
+            position: relative;
+            top: -103px;
+            left: 5px;
+        }
+
+        .sec {
+            grid-area: sec;
+            background-color: palegreen;
+        }
+
+        footer {
+            grid-area: foot;
+            background-color: palegreen;
+        }
+
+        #art {
+            text-align: center;
+        }
+
+        @media only screen and (max-width:400px) {
+
+            .box {
+                width: 500px;
+                position: relative;
+                left: 10px;
+                gap: 10px;
+                grid-template-areas:
+                    'head head head head'
+                    'nav nav nav nav'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'sec sec sec sec'
+                    'sec sec sec secc'
+                    'sec sec sec sec'
+                    'aside aside aside aside'
+                    'aside aside aside aside'
+                    'foot foot foot foot'
+            }
+
+            aside {
+                background-color: palegreen;
+            }
+
+            .aside1 {
+                display: none;
+            }
+
+            .aside2 {
+                display: none;
+            }
+
+            .aside2 {
+                display: none;
+            }
+
+        }
+
+
+        @media only screen and (min-width:400px) and (max-width:1000px) {
+
+            .div {
+                width: 500px;
+                position: relative;
+                left: 10px;
+                grid-template-areas:
+                    'head head head head'
+                    'nav nav nav nav'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'art art art art'
+                    'sec sec sec sec'
+                    'sec sec sec secc'
+                    'sec sec sec sec'
+                    'aside aside aside aside'
+                    'aside aside aside aside'
+                    'foot foot foot foot'
+            }
+            aside {
+                background-color: palegreen;
+            }
+
+            .aside1 {
+                display: none;
+            }
+
+            .aside2 {
+                display: none;
+            }
+
+            .aside2 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <h2>Page Header</h2>
+        </header>
+        <nav>
+            <h2>Nav</h2>
+        </nav>
+        <article>
+            <h2 id="art">Article</h2>
+            <header class="head1">
+                <h2>Article Header</h2>
+            </header>
+            <section class="sec1">
+                <h2>Main</h2>
+            </section>
+        </article>
+        <aside>
+            <div class="aside1">
+                <h2>Aside</h2>
+            </div>
+            <div class="aside2">
+                <h2>Aside</h2>
+            </div>
+            <div class="aside3">
+                <h2>Aside</h2>
+            </div>
+        </aside>
+        <section class="sec">
+            <h2>Section</h2>
+        </section>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Example- add rows to a table using JavaScript DOM </title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="addRow()"> Add row </button>
+    <br><br>
+
+    <table id="myTable">
+        <thead>
+            <th> Name </th>
+            <th> Age </th>
+            <th> City </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Alen </td>
+                <td> 20 </td>
+                <td> Kolkata </td>
+            </tr>
+            <tr>
+                <td> Tim </td>
+                <td> 18 </td>
+                <td> Bangalore </td>
+            </tr>
+            <tr>
+                <td> Mark </td>
+                <td> 23 </td>
+                <td> Kochi</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+<script>
+
+    function addRow() {
+        var table = document.getElementById("myTable");
+        var row = document.createElement("tr")
+
+        var c1 = document.createElement("td")
+        var c2 = document.createElement("td")
+        var c3 = document.createElement("td")
+
+        c1.innerHTML = "Alex";
+        c2.innerHTML = "25";
+        c3.innerHTML = "chennai";
+
+        row.append(c1);
+        row.append(c2);
+        row.append(c3);
+
+        table.append(row);
+    }
+</script>
+
+</html>

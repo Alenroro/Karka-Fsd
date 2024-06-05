@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #one {
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="change()">click</button>
+    <div id="one">Hello</div>
+    <script>
+      function change() {
+        let a = document.getElementById("one");
+        // a.innerHTML="good morning"
+        // one.innerText="HI"
+        // a.textContent="welcome"
+
+        a.style.backgroundColor = "lightcoral";
+        a.style.border = "1px solid black";
+        a.style.color = "white";
+      }
+    </script>
+  </body>
+</html>

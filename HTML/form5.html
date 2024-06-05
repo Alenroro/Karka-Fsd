@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        ol {
+            height: 600px;
+            width: 350px;
+            background-color: lightgrey;
+            padding: 10px;
+            font-size: large;
+            margin-left: 450px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        input[type=text] {
+            width: 95%;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 0px;
+
+        }
+
+        select {
+            width: 95%;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 0px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 200px;
+            border: none;
+            border-radius: 5px;
+            margin: 20px 0px;
+        }
+        input[type=submit]{
+            height: 25px;
+            width: 20%;
+            margin-left: 265px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myform" onsubmit="validate()">
+        <ol>
+            <li>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+            </li>
+            <li>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname">
+            </li>
+            <li>
+                <label for="count">country:</label>
+                <select id="count" name="count">
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="USA">USA</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Europe">Europe</option>
+                </select>
+            </li>
+            <li>
+                <label for="sub">Subject:</label>
+                <textarea id="sub" name="sub">Write something ..</textarea>
+            </li>
+            <li>
+                <input type="submit" value="Sumbit">
+            </li>
+        </ol>
+    </form>
+
+
+    <script>
+         function validate() {
+            var user1 = document.myform.fname.value;
+            var user2 = document.myform.lname.value;
+            var country = document.myform.count.value;
+            var subject = document.myform.sub.value;
+        }
+        if (user1 == null || user1 == "") {
+            alert("Enter the vaild name");
+            return false;
+        }
+        else if (user2 == null || user2 == "") {
+            alert("Enter the valid name");
+            return false;
+        }
+        else if (country == null || country == "") {
+            alert("Enter the valid name");
+            return false;
+        }
+        else if (subject == null || subject == "") {
+            alert("Enter the valid name");
+            return false;
+        }
+    </script>
+</body>
+
+</html>

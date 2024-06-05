@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        #box {
+            height: 670px;
+            width: 1000px;
+            margin: auto;
+
+        }
+
+        header {
+            height: 50px;
+            width: 100%;
+            background-color: lightcoral;
+            margin-bottom: 35px;
+        }
+
+        #div {
+            height: 500px;
+            width: 100%;
+
+        }
+
+        aside {
+            height: 100%;
+            width: 350px;
+            background-color: lightblue;
+            float: left;
+        }
+
+        article {
+            height: 100%;
+            width: 600px;
+            background-color: lightblue;
+            float: right;
+        }
+
+        #img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+
+        .img {
+            height: 150px;
+            width: 150px;
+            background-color: lightseagreen;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            height: 50px;
+            width: 100%;
+            background-color: lightgreen;
+            margin-top: 35px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        article>h2 {
+            margin-bottom: 50px;
+            margin-top: 250px;
+        }
+
+        aside>h2 {
+            margin-top: 65%;
+            margin-left: auto;
+        }
+
+        h3 {
+            display: inline;
+            margin-bottom: 300px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <header>
+            <h2>Header</h2>
+        </header>
+        <div id="div">
+            <aside>
+                <h2>Aside</h2>
+            </aside>
+            <article>
+                <h2>Article</h2>
+                <div id="img">
+                    <div class="img">
+                        <h2>Image</h2>
+                    </div>
+                    <div class="img">
+                        <h2>Image</h2>
+                    </div>
+                    <div class="img">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div>
+</body>
+
+</html>

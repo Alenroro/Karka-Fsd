@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #text {
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple To-Do List</h1>
+
+    <input type="text" id="text" placeholder="Add a new task" />
+    <button onclick="change()">Add Task</button>
+
+    <ul id="op"></ul>
+
+    <script>
+      function change() {
+        var text = document.getElementById("text");
+        var op = document.getElementById("op");
+
+        if (text.value.trim() !== "") {
+          var li = document.createElement("li");
+          li.innerHTML =
+            text.value +
+            ' <button onclick="editTask(this)">Edit</button> <button onclick="deleteTask(this)">Delete</button>';
+          op.appendChild(li);
+          text.value = "";
+        }
+      }
+
+      function editTask(button) {
+        var li = button.parentNode;
+        var taskText = li.firstChild.nodeValue.trim();
+        var updatedTask = prompt("Edit task:", taskText);
+
+        if (updatedTask !== null && updatedTask.trim() !== "") {
+          li.firstChild.nodeValue = updatedTask;
+        }
+      }
+
+      function deleteTask(button) {
+        var li = button.parentNode;
+        li.parentNode.removeChild(li);
+      }
+    </script>
+  </body>
+</html> 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object to json</title>
+    <style></style>
+</head>
+
+<body>
+    <div id="text"></div>
+    <script>
+        var person = {
+            firstname: "alen",
+            lastname: "roy",
+            age: "28",
+        }
+        var changetojson = JSON.stringify(person);
+        document.getElementById("text").innerHTML = changetojson;
+        localStorage.setItem("person", changetojson);
+        console.log() 
+    </script>
+</body>
+
+</html>

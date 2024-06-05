@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- <label for="name">Name</label>
+      <input type="text" id="text" />
+      <button onclick="clk(event)" id="clk">Submit</button>
+      <button  id="clk">Submit</button> -->
+    </form>
+    <script>
+      //   function clk(e) {
+      //     e.preventDefault();
+      //     let array = [];
+      //     let a = document.getElementById("text").value;
+      //     array.push(a);
+      //     console.log(array);
+      //     document.getElementById("text").value="";
+      //   }
+
+      //   $(document).ready(function () {
+      //     let array = [];
+      //     $("#clk").click(function (e) {
+      //       e.preventDefault();
+      //       let a = $("#text").val();
+      //       console.log(a);
+      //         array.push(a);
+      //         console.log(array);
+      //         localStorage.setItem("arr", JSON.stringify(array));
+      //       $("#text").val("");
+      //     });
+
+      //     let a = JSON.parse(localStorage.getItem("arr"));
+      //     console.log(a)
+
+      //   });
+      //   localStorage.setItem("name", "Alen");
+      //   localStorage.setItem("age", 23);
+
+      //   let Array = ["alen", "a", "c", "d"];
+      //   localStorage.setItem("array", JSON.stringify(Array));
+
+      //   let str = localStorage.getItem("name");
+      //   let a = JSON.parse(localStorage.getItem("array"));
+
+      //   console.log(str);
+      //   console.log(a);
+
+      let arr = [1, 2, 3, 4, 5, 6,8];
+
+      let a = localStorage.getItem("empty")
+        ? JSON.parse(localStorage.getItem("empty"))
+        : [];
+
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+          a.push(arr[i]);
+        }
+      }
+      localStorage.setItem("empty", JSON.stringify(a));
+      let b = JSON.parse(localStorage.getItem("empty"));
+
+      console.log(b);
+    </script>
+  </body>
+</html>

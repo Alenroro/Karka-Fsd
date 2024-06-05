@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contact form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: horizontal;
+
+        }
+
+        body {
+            background-image: url(./flower2.jpg);
+
+        }
+
+        table {
+            height: 500px;
+            position: absolute;
+            top: 130px;
+            left: 190px;
+            font-size: large;
+            color: white;
+        }
+
+        input[type=tel] {
+            width: 120px;
+            height: 20px;
+        }
+
+        input[type=submit] {
+            width: 200px;
+            height: 30px;
+            background-color: rgba(170, 165, 165, 0);
+            border-color: white;
+            color: white;
+            font-size: large;
+        }
+
+        select {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <h1>Contact Form</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name"> Your Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="firstname" placeholder="First Name">
+                    <input type="text" id="name" name="lastname" placeholder="last Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" placeholder="eg. hi@mail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="num">Phone Number*</label>
+                </td>
+                <td>
+                    <input type="tel" id="num" name="num" pattern="[0-9]{3}" placeholder="###">
+                    <input type="tel" id="num" name="num" pattern="[0-9]{4}" placeholder="####">
+                    <input type="tel" id="num" name="num" pattern="[0-9]{3}" placeholder="###">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="msg">message subject*</label>
+                </td>
+                <td>
+                    <select id="msg" name="message">
+                        <option value="other">Other</option>
+                        <option value="message1">message2</option>
+                        <option value="message3">message3</option>
+                        <option value="message4">message4</option>
+                        <option value="message5">message5</option>
+                    </select>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <label for="mes">Message*</label>
+                </td>
+                <td>
+                    <textarea name="message" id="mes" cols="50" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="verify">Verification*</label>
+                </td>
+                <td>
+                    <input type="image" src="./../../Downloads/recaptcha2.png" alt="recaptcha">
+                </td>
+            </tr>
+            <tr>
+                <td><hr></td>
+                <td><hr></td>
+    
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

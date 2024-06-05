@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            #box{
+                height: 550px;
+                width: 550px;
+                border: 1px solid black;
+                background-color: darkblue;
+                border-radius: 20px;
+            }
+            .row{
+                height: 50px;
+                width: 80%;
+                margin: 30px;
+            }
+            #disp{
+                background-color: rgb(103, 204, 103);
+                border-left: 5px solid lightgray;
+                border-right: 5px solid lightgray;
+                border-bottom: 5px solid lightgray;
+            }
+            #button{
+                height: 100%;
+                width: 80px;
+                border: 1px solid black;
+                border-radius: 20px;
+                text-align: center;
+                font-size: larger;
+                margin-left: 20px;
+                float: left;
+            }
+            .grey{
+                background-color: grey;
+                color: white;
+            }
+            .black{
+                background-color: black;
+                color: white;
+            }
+            .red{
+                background-color: red;
+            }
+            .orange
+            {
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="row" id="disp"></div>
+            <div class="row" id="one">
+                <div id="button" class="grey">Mrc</div>
+                <div id="button" class="grey">m-</div>
+                <div id="button" class="grey">m+</div>
+                <div id="button" class="red">/</div>
+            </div>
+            <div class="row" id="two">
+                <div id="button" class="black">7</div>
+                <div id="button" class="black">8</div>
+                <div id="button" class="black">9</div>
+                <div id="button" class="red">*</div>
+            </div>
+            <div class="row" id="three">
+                <div id="button" class="black">4</div>
+                <div id="button" class="black">5</div>
+                <div id="button" class="black">6</div>
+                <div id="button" class="red">-</div>
+            </div>
+            <div class="row" id="four">
+                <div id="button" class="black">1</div>
+                <div id="button" class="black">2</div>
+                <div id="button" class="black">3</div>
+                <div id="button" class="red">+</div>
+            </div>
+            <div class="row" id="five">
+                <div id="button" class="black">0</div>
+                <div id="button" class="black">.</div>
+                <div id="button" class="black">C</div>
+                <div id="button" class="orange">=</div>
+            </div>
+        </div>
+    </body>
+</html>

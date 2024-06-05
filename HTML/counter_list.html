@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      ol {
+        list-style-type: none;
+        counter-reset: list;
+      }
+
+      li::before {
+        counter-increment: list;
+        content: counters(list, ".") ". ";
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol>
+      <li>
+        apple
+        <ol>
+          <li>red</li>
+          <li>green</li>
+        </ol>
+      </li>
+      <li>
+        mango
+        <ol>
+          <li>ripe</li>
+          <li>unripe</li>
+        </ol>
+      </li>
+      <li>Pine apple</li>
+      <li>
+        Grapes
+        <ol>
+          <li>
+            black
+            <ol>
+              <li>seed</li>
+              <li>seed-less</li>
+            </ol>
+          </li>
+          <li>
+            green
+            <ol>
+              <li>seed</li>
+              <li>seed-less</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </body>
+</html>

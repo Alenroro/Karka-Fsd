@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="./../images/cat.jpg" height="400" width="400" alt="cat" id="image">
+        <button onclick="document.getElementById('image').src='./../images/dog.jpg'">dog</button>
+        <button onclick="document.getElementById('image').src='./../images/kola.jpg'">kola</button>
+    </div>
+    <div>
+        <img src="./../images/cat.jpg" height="400" width="400" alt="cat" id="image1">
+        <button onclick="document.getElementById('image1').style.display='none'">hide</button>
+        <button onclick="document.getElementById('image1').style.display='inline'">don't hide</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+    <style></style>
+</head>
+
+<body>
+    <div id="div"></div>
+    <script>
+        function answer() {
+            var person = {
+                name: "Alen",
+                age: "22",
+                height: "156cm",
+                color: "brown"
+            };
+            var car = ["BMW", "AUDI", "BENZ", "JAGUAR", "ROLLS ROYCE"]
+            var comp=(person.age<=18)?"minor":(person.age>=18)?"major":"not eligible";
+            console.log(car[3])
+            console.log(person.name)
+            console.log(10 ** 2)
+console.log(comp)
+            document.getElementById("div").innerHTML = "The Name is:" + person.name + " his favorite car is :" + car[4];
+        }
+    </script>
+    <button onclick="answer()" >Click here</button>
+</body>
+
+</html>

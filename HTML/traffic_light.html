@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        #main{
+            height: 650px;
+            width: 700px;
+            background-image: url(./traffic.jpg);
+        }
+            #box{
+                height:300px ;
+                width: 100px;
+                background-color:black ;
+                border: 7px solid grey;
+                border-radius: 100px;
+                position: relative;
+                top: 150px;
+                left: 255px;
+            }
+            .pos{
+                position: absolute;
+                top: 290px;
+                left: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="box">
+                <svg style="height: 300px; width: 100px">
+                    <circle cx="45" cy="50" r="30" stroke="grey" stroke-width="3" fill="red"></circle>
+                    <circle cx="45" cy="135" r="30" stroke="grey" stroke-width="3" fill="yellow"></circle>
+                    <circle cx="45" cy="225" r="30" stroke="grey" stroke-width="3" fill="green"></circle>
+                </svg>
+                <svg class="pos" style=" height: 100px; width: 100px">
+                    <rect width="20" height="100" x="35" y="0" stroke="grey" stroke-width="3" fill="black"></rect>
+                </svg>
+            </div>
+            
+        </div>
+    </body>
+</html>

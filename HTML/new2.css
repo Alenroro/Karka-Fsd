@@ -1,0 +1,26 @@
+body{
+  box-sizing: border-box;
+  background-image: url(./../images/spider.jpg)
+}
+
+.high {
+  height: 50px;
+  width: auto;
+  border: 1px solid black;
+  background-color: aquamarine;
+  background-size: contain;
+}
+
+.mid {
+  height: 150px;
+  width: auto;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.low {
+  height: 50px;
+  width: auto;
+  border: 1px solid black;
+}

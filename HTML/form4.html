@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .box {
+            height: 600px;
+            width: 500px;
+            background-color: aquamarine;
+            margin-left: 450px;
+            box-shadow: 1px 1px 5px lightgrey, -1px 1px 5px lightgrey, 1px -1px 5px lightgrey, -1px 1px 5px lightgrey;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        input{
+            margin-left: 100px;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Registration form for Sports</h1>
+        <form name="myform" onsubmit=" return validate()">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sname">surname:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="sname" name="sname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="dob" name="dateofbirth">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="address" name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="num">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="num" name="num" pattern="[0-9]{10}">
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <label for="zcode">Zip Code:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="zcode" name="zcode" pattern="[0-9]{6}">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function validate() {
+            var user = document.myform.name.value;
+            var sur = document.myform.sname.value;
+            var date = document.myform.dob.value;
+            var add = document.myform.address.value;
+            var number = document.myform.num.value;
+            var mail = document.myform.email.value;
+            var code = document.myform.zcode.value;
+        }
+        if (user == null || user == "") {
+            alert("Enter the vaild name");
+            return false;
+        }
+        else if (sur == null || sur == "") {
+            alert("Enter the valid surname");
+            return false;
+        }
+        else if (date == null || date == "") {
+            alert("Enter the valid date of birth");
+            return false;
+        }
+        else if (add == null || add == "") {
+            alert("Enter the valid address");
+            return false;
+        }
+        else if (number == null || number == "") {
+            alert("Enter the valid number");
+            return false;
+        }
+        else if (mail == null || mail == "") {
+            alert("Enter the valid email");
+            return false;
+        }
+        else if (code == null || code == "") {
+            alert("Enter the valid zipcode");
+            return false;
+        }
+    </script>
+</body>
+
+</html>

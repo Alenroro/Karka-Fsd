@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip path</title>
+    <style>
+        .one {
+            height: 300px;
+            width: 300px;
+            float: left; 
+            margin: 10px;
+        }
+
+        #one {
+            clip-path: polygon(150px 0px, 300px 150px, 150px 300px, 0px 150px);
+        }
+
+        #two {
+            clip-path: polygon(150px 0px, 300px 150px, 225px 300px, 75px 300px, 0px 150px);
+        }
+
+        #three {
+            clip-path: polygon(150px 0px, 190px 150px, 300px 150px, 200px 200px, 225px 300px, 
+            150px 225px, 75px 300px, 100px 200px, 0px 150px, 100px 150px);
+        }
+
+        #four {
+            clip-path: polygon(50px 50px, 250px 50px, 250px 250px, 225px 250px, 225px 300px, 150px 250px, 50px 250px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <img src="./../images/cat.jpg" alt="cat" height="300px" width="300px" id="one">
+    </div>
+    <div class="one">
+        <img src="./../images/cat.jpg" alt="cat" height="300px" width="300px" id="two">
+    </div>
+    <div class="one">
+        <img src="./../images/cat.jpg" alt="cat" height="300px" width="300px" id="three">
+    </div>
+    <div class="one">
+        <img src="./../images/cat.jpg" alt="cat" height="300px" width="300px" id="four">
+    </div>
+</body>
+
+</html>

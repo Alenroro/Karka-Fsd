@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online shopping</title>
+    <script src="https://kit.fontawesome.com/137efd360a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            height: 1000px;
+            width: 100%;
+        }
+
+        header {
+            height: 50px;
+            width: 100%;
+            background-color: palegoldenrod;
+        }
+
+        #hione {
+            position: absolute;
+            top: 15px;
+            left: 1100px;
+        }
+
+        #hitwo {
+            position: absolute;
+            top: 15px;
+            left: 1200px;
+        }
+
+        #hithree {
+            position: absolute;
+            top: 15px;
+            left: 1300px;
+        }
+
+        #search {
+            width: 500px;
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            left: 500px;
+        }
+
+        nav {
+            height: 950px;
+            width: 30%;
+            float: left;
+            background-color: palegreen;
+        }
+
+        #head {
+            height: 50px;
+            width: 100%;
+            background-color: paleturquoise;
+            font-size: larger;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        section {
+            height: 950px;
+            width: 70%;
+            position: relative;
+            float: right;
+        }
+
+        #filter {
+            height: 25px;
+            width: 200px;
+            background-color: slategray;
+            border: 0.5px solid black;
+            position: absolute;
+            top: 10px;
+            left: 740px;
+        }
+
+        .div {
+            height: 200px;
+            width: 200px;
+            border: 0.5px solid black;
+        }
+
+        #one {
+            float: left;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+
+        #two {
+            float: left;
+            position: absolute;
+            top: 60px;
+            left: 240px;
+        }
+
+        #three {
+            float: left;
+            position: absolute;
+            top: 60px;
+            left: 460px;
+        }
+
+        #four {
+            float: left;
+            position: absolute;
+            top: 60px;
+            left: 680px;
+        }
+
+        #five {
+            float: left;
+            position: absolute;
+            top: 280px;
+            left: 20px;
+        }
+
+        #six {
+            float: left;
+            position: absolute;
+            top: 280px;
+            left: 240px;
+        }
+
+        #seven {
+            float: left;
+            position: absolute;
+            top: 280px;
+            left: 460px;
+        }
+
+        #eight {
+            float: left;
+            position: absolute;
+            top: 280px;
+            left: 680px;
+        }
+
+        #nine {
+            float: left;
+            position: absolute;
+            top: 500px;
+            left: 20px;
+        }
+
+        #ten {
+            float: left;
+            position: absolute;
+            top: 500px;
+            left: 240px;
+        }
+
+        #eleven {
+            float: left;
+            position: absolute;
+            top: 500px;
+            left: 460px;
+        }
+
+        #twelve {
+            float: left;
+            position: absolute;
+            top: 500px;
+            left: 680px;
+        }
+
+        #thirt {
+            float: left;
+            position: absolute;
+            top: 720px;
+            left: 20px;
+        }
+
+        #fourt {
+            float: left;
+            position: absolute;
+            top: 720px;
+            left: 240px;
+        }
+
+        #fift {
+            float: left;
+            position: absolute;
+            top: 720px;
+            left: 460px;
+        }
+
+        #sixt {
+            float: left;
+            position: absolute;
+            top: 720px;
+            left: 680px;
+        }
+
+        #icone {
+            position: absolute;
+            top: 170px;
+            left: 25px;
+        }
+
+        #ictwo {
+            position: absolute;
+            top: 170px;
+            left: 150px;
+        }
+
+        p, details, h4{
+            margin-left: 10px;
+        }
+    
+        .p {
+            position: absolute;
+            top: 117px;
+            left: 70px;
+            margin: 0px;
+            text-align: center;
+            font-size: large;
+        }
+
+        #pone {
+            position: absolute;
+            top: 105px;
+            left: 20px;
+            text-align: left;
+        }
+
+        #ptwo {
+            position: absolute;
+            top: 105px;
+            left: 75px;
+            text-align: left;
+        }
+
+        #pthree{
+            position: absolute;
+            left: 50px;
+
+        }
+        .img {
+            height: 100px;
+            width: 120px;
+            margin-left: 38px;
+            margin-top: 14px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <i class="fa fa-bars"
+                style="font-size:25px;color:black;position: absolute; top:20px; left: 20px; background-color: white;"></i>
+            <label for="search"></label>
+            <input type="search" id="search" name="search" placeholder="Search">
+            <i class='far fa-heart' style='font-size:20px;color:black' id="hione"></i>
+            <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="hitwo"></i>
+            <i class="fa fa-user" style="font-size:20px;color:black" id="hithree"></i>
+        </header>
+        <section>
+            <div id="filter">
+                sort by recommended
+                <i class='fas fa-sort-amount-down-alt' style='font-size:10px;color:black'></i>
+            </div>
+            <div class="div" id="one">
+                <img src="./desktop.jpg" class="img">
+                <p class="p">Monitor</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="two">
+                <img src="./pant 1.jpeg" class="img">
+                <p class="p" id="pthree">Cargo pants</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="three">
+                <p class="p">Phone</p>
+                <img src="./phone.jpg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="four">
+                <p class="p">Hoodie</p>
+                <img src="./hoodie.jpeg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="five">
+                <p id="pone"><b>Keyboard and mouse</b></p>
+                <img src="./keybpoard and mouse.jpeg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="six">
+                <p class="p">Jacket</p>
+                <img src="./jacket.jpeg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="seven">
+                <img src="./jeans.jpeg" class="img">
+                <p class="p">Jeans</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="eight">
+                <img src="./pc.jpg" class="img">
+                <p class="p">Gaming PC</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="nine">
+                <img src="./laptop.jpg" class="img">
+                <p class="p">Laptop</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="ten">
+                <img src="./torned jeans.jpg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <p class="p" style="position: absolute; left: 50px;">Torned Jeans</p>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="eleven">
+                <p id="ptwo"><b>TV</b></p>
+                <img src="./tv.jpg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="twelve">
+                <p class="p">Suit</p>
+                <img src="./suit.jpg" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="thirt">
+                <img src="./headphones.webp" class="img">
+                <p class="p" style="position: absolute; left: 55px;">Headphones</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="fourt">
+                <img src="./pant 2.webp" class="img">
+                <p class="p" style="position: absolute; left: 55px;">Brown pant</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="fift">
+                <img src="./pc 2.webp" class="img">
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <p class="p">Desktop</p>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+            <div class="div" id="sixt">
+                <img src="./shoe.jpg" class="img">
+                <p class="p">Shoe</p>
+                <i class='far fa-heart' style='font-size:20px;color:red' id="icone"></i>
+                <i class="fa fa-shopping-cart" style="font-size:20px;color:black" id="ictwo"></i>
+            </div>
+        </section>
+        <nav>
+            <header id="head">
+                categories
+            </header>
+            <h4>clothing</h4>
+            <hr>
+            <p>coats</p>
+            <p>Suits</p>
+            <p>jackets</p>
+            <details>
+                <summary>Show More</summary>
+            </details>
+            <h4>Electronic Devices</h4>
+            <hr>
+            <p>Tv</p>
+            <p>Computers and accessoires</p>
+            <p>Phone and accessoires</p>
+            <details>
+                <summary>Show More</summary>
+            </details>
+            <h4>Help and Settings</h4>
+            <p>your account</p>
+            <i class='fas fa-globe' style='font-size:20px;color:black'> </i>English<br>
+            <i class="fa fa-comments-o" style="font-size:20px;color:black"></i>Rate us<br>
+            <i class="fa fa-sign-out" style="font-size:20px;color:black"> </i>sign out<br>
+        </nav>
+    </div>
+</body>
+
+</html>
